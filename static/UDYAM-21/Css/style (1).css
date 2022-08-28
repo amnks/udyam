@@ -1,0 +1,481 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.id-section {
+  margin: 50px 50px 0 50px;
+  border-radius: 5px;
+}
+.id-row {
+  margin-bottom: 0 !important;
+}
+.my-row {
+  height: auto !important;
+  width: auto !important;
+  padding: 15px;
+}
+.col,
+.col-1,
+.col-10,
+.col-11,
+.col-12,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-auto,
+.col-lg,
+.col-lg-1,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-lg-auto,
+.col-md,
+.col-md-1,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-auto,
+.col-sm,
+.col-sm-1,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-sm-auto,
+.col-xl,
+.col-xl-1,
+.col-xl-10,
+.col-xl-11,
+.col-xl-12,
+.col-xl-2,
+.col-xl-3,
+.col-xl-4,
+.col-xl-5,
+.col-xl-6,
+.col-xl-7,
+.col-xl-8,
+.col-xl-9,
+.col-xl-auto {
+  padding: 10px !important;
+}
+.card {
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  border-radius: 5px !important;
+}
+p {
+  color: wheat;
+}
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700");
+body {
+  font-family: "Open Sans", sans-serif;
+}
+*:hover {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+section {
+  float: left;
+  width: 100%;
+  background: #fff;
+  padding: 30px 0;
+}
+h1 {
+  float: left;
+  width: 100%;
+  color: #232323;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+h1 span {
+  font-family: "Libre Baskerville", serif;
+  display: block;
+  font-size: 45px;
+  text-transform: none;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  font-weight: 700;
+}
+h1 a {
+  color: #131313;
+  font-weight: bold;
+}
+
+/*Profile Card 5*/
+.profile-card-5 {
+  margin-top: 20px;
+}
+.profile-card-5 .btn {
+  border-radius: 2px;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 7px 20px;
+}
+.profile-card-5 .card-img-block {
+  width: 91%;
+  margin: 0 auto;
+  position: relative;
+  top: -20px;
+}
+.profile-card-5 .card-img-block img {
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.63);
+}
+.profile-card-5 h5 {
+  color: #4e5e30;
+  font-weight: 600;
+}
+.profile-card-5 p {
+  font-size: 14px;
+  font-weight: 300;
+}
+.profile-card-5 .btn-primary {
+  background-color: #4e5e30;
+  border-color: #4e5e30;
+}
+.contact-us-section {
+  height: auto !important;
+  margin: 10px;
+  border-radius: 5px;
+}
+.login-box {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 30px;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label,
+.login-box .user-box textarea:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+
+.login-box form a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+  color: wheat;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 40px;
+  letter-spacing: 4px;
+}
+.login-box a:hover {
+  background: wheat;
+  color: #000;
+  border-radius: 2px;
+  transition: 1s;
+  background: wheat;
+  /* box-shadow: 0 0 5px #03e9f4,
+            0 0 5px #03e9f4,
+            0 0 5px #03e9f4,
+            0 0 5px #03e9f4; */
+}
+.login-box a:hover::after {
+  transition: 1s;
+}
+
+.login-box a span {
+  position: absolute;
+  display: block;
+}
+
+.login-box a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+.login-box a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+
+.login-box a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+.login-box a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
+.reach,
+.contact {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  color: wheat !important;
+  font-weight: 400;
+}
+footer {
+  padding: 2%;
+  overflow: hidden;
+}
+footer.nb-footer {
+  background: #222;
+  border-top: 4px solid wheat;
+}
+footer.nb-footer .about {
+  margin: 0 auto;
+  margin-top: 5px;
+  max-width: 1170px;
+  text-align: center;
+}
+footer.nb-footer .about p {
+  font-size: 13px;
+  color: #999;
+  margin-top: 5px;
+}
+footer.nb-footer .about .social-media {
+  margin-top: 5px;
+}
+footer.nb-footer .about .social-media ul li a {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  margin: 10px;
+  line-height: 45px;
+  border-radius: 50%;
+  font-size: 16px;
+  color: wheat;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+footer.nb-footer .about .social-media ul li a:hover {
+  background: wheat;
+  color: #222;
+  border-color: wheat;
+  transition: 0.4s;
+}
+footer.nb-footer .footer-info-single {
+  margin-top: 30px;
+}
+footer.nb-footer .footer-info-single .title {
+  color: #aaa;
+  text-transform: uppercase;
+  font-size: 16px;
+  border-left: 4px solid #b78c33;
+  padding-left: 5px;
+}
+footer.nb-footer .footer-info-single ul li a {
+  display: inline-block;
+  color: #aaa;
+  padding: 2px 0;
+}
+footer.nb-footer .footer-info-single ul li a:hover {
+  color: wheat;
+}
+footer.nb-footer .footer-info-single p {
+  font-size: 13px;
+  line-height: 20px;
+  color: #aaa;
+}
+footer.nb-footer .copyright {
+  margin-top: 15px;
+  background: #111;
+  padding: 7px 0;
+  color: #999;
+}
+footer.nb-footer .copyright p {
+  margin: 0;
+  padding: 0;
+}
+li {
+  display: inline-block;
+}
+@media (max-width: 500px) {
+  .card-title {
+    padding: 0px;
+    font-size: 15px;
+  }
+  .card-text {
+    padding: 0px;
+    font-size: 15px !important;
+  }
+}
+.EES {
+  margin: 25%;
+  margin-right: 55%;
+  margin-top: 10%;
+  margin-left: 0%;
+}
+.address,
+.email {
+  text-align: center;
+  text-align: left;
+  color: wheat;
+  font-weight: 200;
+  margin: 10px;
+}
+.email {
+  margin-top: 95px;
+}
+.fa1 {
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 100%;
+}
+.fa1:hover {
+  background-color: wheat;
+  color: #222;
+  transition: 0.3s;
+}
+
+h3 {
+  color: rgb(161, 161, 161) !important;
+  font-family: "Montserrat", sans-serif;
+}
+.imgs,
+.box,
+.contactInfo {
+  display: inline-flex;
+}
+.cus-info {
+  margin: auto;
+}
+
+@media (max-width: 767px) {
+  .imgs {
+    justify-content: center;
+  }
+}
+

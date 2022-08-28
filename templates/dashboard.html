@@ -1,0 +1,515 @@
+{% load static %}<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ==== Document Title ==== -->
+    <title>Udyam'21|Dashboard</title>
+    <link rel = "icon" href =  "{% static 'Assets/logo2.jpeg' %}" type = "image/x-icon">
+    
+    <!-- ==== Document Meta ==== -->
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- ==== Favicon ==== -->
+    <link rel="icon" href="favicon.png" type="image/png">
+
+    <!-- ==== Google Font ==== -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700%7CRoboto:300,400,400i,500,700">
+
+    <!-- ==== Plugins Bundle ==== -->
+    <link rel="stylesheet" href="{% static 'dashboard/css/plugins.min.css' %}">
+    
+    <!-- ==== Main Stylesheet ==== -->
+    <link rel="stylesheet" href="{% static 'dashboard/css/style.css' %}">
+    
+    <!-- ==== Responsive Stylesheet ==== -->
+    <link rel="stylesheet" href="{% static 'dashboard/css/responsive-style.css' %}">
+    
+    <!-- ==== Color Scheme Stylesheet ==== -->
+    <link rel="stylesheet" href="{% static 'dashboard/css/colors/color-1.css' %}" id="changeColorScheme">
+
+    <!-- ==== HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries ==== -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="{% static 'dashboard/css/dashboardtable.css' %}">
+    <style>
+        .wrapper{
+            color: black;
+        }
+        .deleteteam:hover{
+            background: rgb(168, 20, 20);
+        }
+        .submitnow:hover{
+            background: rgb(78, 78, 226);
+        }
+        
+        .logout{
+            float: right;
+            position: fixed;
+            right: 30px;
+            top: 20px;
+            font-size: 1.7rem;
+        }
+        .udyamlogo{
+                height: 65px;
+            }
+        .scrollit{
+            overflow:scroll;
+            height:135px;
+        }
+        @media only screen and (max-width: 600px) {
+            .udyamlogo{
+                height: 35px;
+                margin-top: 15px;
+
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Wrapper Start -->
+    <div class="wrapper">
+        <!-- Header Section Start -->
+        <header class="header--section style--1">
+            <div class="header--navbar navbar bg-black" data-trigger="sticky">
+                <div class="container">
+                    <div class="navbar-header">
+
+                        <!-- Header Navbar Logo Start -->
+                        <div class="header--navbar-logo navbar-brand">
+                            <a href="{% url 'home' %}">
+                                <img src="{% static 'dashboard/img/udyamwhite2.png' %}" class="normal udyamlogo" alt="">
+                                <img src="{% static 'dashboard/img/udyamblue.png' %}" class="sticky udyamlogo" alt="">
+                            </a>
+                        </div>
+
+                        <div class="logout">
+                            <a href="{% url 'logout' %}" class="fa fa-user-o">&nbsp Log Out</a>
+                        </div>
+                        <!-- Header Navbar Logo End -->
+                    </div>
+                </div>
+            </div>
+            <!-- Header Navbar End -->
+        </header>
+        <!-- Header Section End -->
+
+        <!-- Cover Header Start -->
+        <div class="cover--header pt--80 text-center" data-bg-img="{% static 'dashboard/img/cover.jpg' %}" >
+            <div class="container">
+                <div class="cover--avatar online" data-overlay="0.3" data-overlay-color="primary">
+                    <img src="{% static 'dashboard/img/profile.jpeg' %}" alt="">
+                </div>
+
+                <div class="cover--user-name">
+                    <h2 class="h3 fw--600">{{ user.first_name }} {{ user.last_name }}</h2>
+                </div>
+            </div>
+        </div>
+        <!-- Cover Header End -->
+
+        <!-- Page Wrapper Start -->
+        <section class="page--wrapper pt--80 pb--20">
+            <div class="container">
+                <div class="row">
+                    <!-- Main Content Start -->
+                    <div class="main--content col-md-8 pb--60" data-trigger="stickyScroll">
+                        <div class="main--content-inner drop--shadow">
+                            <!-- Content Nav Start -->
+                            <div class="content--nav pb--30">
+                                <ul class="nav ff--primary fs--14 fw--500 bg-lighter">
+                                    <li class="active"><a href="#">Profile</a></li>
+                                </ul>
+                            </div>
+                            <!-- Content Nav End -->
+
+                            <!-- Profile Details Start -->
+                            <div class="profile--details fs--14">
+                                <!-- Profile Item Start -->
+                                <div class="profile--item">
+                                    <div class="profile--heading">
+                                        <h3 class="h4 fw--700">
+                                            <span class="mr--4">My Teams</span>
+                                            <i class="ml--10 text-primary fa fa-caret-right"></i>
+                                        </h3>
+                                    </div>
+                                    <!-- <div class="mymy"> -->
+                                    {% for team, member in data.teams %}
+                                    <div class="profile--info myevent col-md-8 mymy" id="myevent1">
+                                        <table class="table">
+                                            <tr>
+                                                <th class="fw--700 text-darkest">Event</th>
+                                                <td>{{ team.event }}</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="fw--700 text-darkest">Team Name</th>
+                                                <td>{{ team.team_name }}</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="fw--700 text-darkest">Members</th>
+                                                <td>{{ member.0 }}</td>
+                                            </tr>
+                                            {% if member.1 %}
+                                            <tr>
+                                                <th class="fw--700 text-darkest"></th>
+                                                <td>{{ member.1 }}</td>
+                                            </tr>
+                                            {% endif %}
+                                            {% if member.2 %}
+                                            <tr>
+                                                <th class="fw--700 text-darkest"></th>
+                                                <td>{{ member.2 }}</td>
+                                            </tr>
+                                            {% endif %}
+                                        </table>
+                                    </div>
+                                    <form method="POST" action="{% url 'team-delete' team.id %}">{% csrf_token %}
+                                        <div class="col-md-4 profile--info">
+                                            <button type="delete" value="{{ team.id }}" class="btn btn-primary btn-sm deleteteam">Delete Team</button>
+                                        </div>
+                                    </form>
+                                    {% endfor %}
+                                <!-- </div> -->
+                                </div>
+                                <!-- Profile Item End -->
+                                <div class="profile--item col-md-12">
+                                    <div class="profile--heading">
+                                        <h3 class="h4 fw--700">
+                                            <span class="mr--4 ">Upcoming Workshops</span>
+                                            <i class="ml--10 text-primary fa fa-caret-right"></i>
+                                        </h3>
+                                    </div>
+                                </div>
+
+                                <div class="maintable">
+                                    <table class="workshoptable">
+                                        <caption style="font-size: 14px;">To watch previous workshops <a href="https://www.youtube.com/channel/UC8wlztNbDIu38rfQ1HChSIg" target="_blank">Click Here</a></caption>
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">Workshop</th>
+                                            <th scope="col">Schedule</th>
+                                            <th scope="col">Time</th>
+                                            <th scope="col">Join Here</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                            <!-- <tr>
+                                                <td colspan="4">
+                                        <div class=" maintable scrollit">
+                                        <table class="workshoptable"> -->
+                                          {% for Workshop in data.workshop %}
+                                          <tr>
+                                            <td data-label="Workshop">{{ Workshop.event }}</td>
+                                            <td data-label="Schedule">{{ Workshop.date }}</td>
+                                            <td data-label="My Score">{{ Workshop.time }}</td>
+                                            <td data-label="Join Here"><a href="{{ Workshop.url }}" target="_blank">Watch here</a></td>
+                                          </tr>
+                                          {% endfor %}
+                                        <!-- </table>
+                                        </div>
+                                        </td>
+                                            </tr> -->
+                                        </tbody>
+                                      </table>
+                                </div>   
+                            </div>
+                            <!-- Profile Details End -->
+                        </div>
+                    </div>
+                    <div class="main--sidebar col-md-4 pb--60" data-trigger="stickyScroll">
+                        <!-- Widget Start -->
+                        <div class="widget">
+                            <h2 class="h4 fw--700 widget--title">Register Now</h2>
+                            <!-- Buddy Finder Widget Start -->
+                            <div class="buddy-finder--widget">
+                                <form action="{% url 'dashboard' %}" method="POST">{% csrf_token %}
+                                    <div class="row">
+                                        <div class="col-xs-12 col-xxs-12">
+                                            <div class="form-group">
+                                                <label>
+                                                    <span class="text-darker ff--primary fw--500">Event</span>
+                                                    {{ form.event }} 
+                                                </label>
+                                                {% if form.event.error %}
+                                                    <p style="color: red">{{ form.events.error }}</p>
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-xxs-12">
+                                            <div class="form-group">
+                                                <label>
+                                                    <span class="text-darker ff--primary fw--500" >Team Name</span>
+                                                    {{ form.team_name }}
+                                                </label>
+                                                {% if form.team_name.error %}
+                                                    <p style="color: red">{{ form.events.error }}</p>
+                                                {% endif %}
+                                                {% if teamnametaken %}
+                                                    <p style="color: red">Team Name is already taken.</p>
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-xs-12">
+                                            <div class="form-group">
+                                                <label>
+                                                    <span class="text-darker ff--primary fw--500">Members</span>
+                                                    {{ form.number_of_members }}
+                                                    {% if form.number_of_members.error %}
+                                                        <p style="color: red">{{ form.number_of_members.error }}</p>
+                                                    {% endif %}
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="newteam_email_ids"></div>
+                                        <div class="col-xs-12">
+                                            <div class="form-group">
+                                                {% if teaminvalid %}
+                                                    <p style="color: red" class="text-darker ff--primary fw--500">Invalid Team</p>
+                                                {% endif %}
+                                                {% if notinteam %}
+                                                    <p style="color: red" class="text-darker ff--primary fw--500">You can't register if you're not in the Team</p>
+                                                {% endif %}
+                                                {% if leaderemail %}
+                                                    <p style="color: red" class="text-darker ff--primary fw--500">Leader email is either misspelled or not registered</p>
+                                                {% endif %}
+                                                {% if member1email %}
+                                                    <p style="color: red" class="text-darker ff--primary fw--500">Member1 email is either misspelled or not registered</p>
+                                                {% endif %}
+                                                {% if member2email %}
+                                                    <p style="color: red" class="text-darker ff--primary fw--500">Member2 email is either misspelled or not registered</p>
+                                                {% endif %}
+                                                {% if leaderalready %}
+                                                    <p style="color: red" class="text-darker ff--primary fw--500">Leader Already registered for event</p>
+                                                {% endif %}
+                                                {% if member1already %}
+                                                    <p style="color: red" class="text-darker ff--primary fw--500">Member1 Already registered for event</p>
+                                                {% endif %}
+                                                {% if member2already %}
+                                                    <p style="color: red" class="text-darker ff--primary fw--500">Member2 Already registered for event</p>
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <button type="submit" class="btn btn-primary submitnow">Submit</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- Buddy Finder Widget End -->
+                        </div>
+                        <!-- Widget End -->
+                        <div class="widget">
+                            <h2 class="h4 fw--700 widget--title">My Details</h2>
+                            <div class="fw--700 widget--title" data-toggle="modal" data-target="#exampleModalCenter">
+                                <a href="#" class="fa fa-pencil">&nbsp Edit Details</a>
+                            </div>
+                            <!-- MODAL========================================== -->
+                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Edit Profile Details</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form method="POST" action="{% url 'update-user' %}" enctype="multipart/form-data">{% csrf_token %}
+                                            <div class="form-group">
+                                                <label>User Name</label>
+                                                <input type="text" required class="form-control" name="username" aria-describedby="emailHelp" placeholder="User Name">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Contact No.</label>
+                                                <input type="number" required class="form-control" name="contact" aria-describedby="emailHelp" placeholder="Contact Number">
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                <button type="submit" class="btn btn-primary">Save changes</button>
+                                            </div>
+                                          </form>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                              <!-- /MODAL========================================== -->
+                            <!-- <div class="profile--info myevent col-md-12 mymy" id="myevent1"> -->
+                                <table class="table">
+                                    <tr>
+                                        <th class="fw--700 text-darkest">User Name</th>
+                                        <td>{{ user.first_name }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="fw--700 text-darkest">EmaiId</th>
+                                        <td>{{ user.email }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="fw--700 text-darkest">Contact</th>
+                                        <td>{{ user.Phone }}</td>
+                                    </tr>
+                                    
+                                </table>
+                            <!-- </div> -->
+                        </div>    
+                        
+                    </div>
+                    <!-- Main Sidebar End -->
+                </div>
+            </div>
+        </section>
+        <!-- Page Wrapper End -->
+
+        <!-- Footer Section Start -->
+        <footer class="footer--section">
+            
+
+            <!-- Footer Copyright Start -->
+            <div class="footer--copyright pt--30 pb--30 bg-darkest">
+                <div class="container">
+                    <div class="text fw--500 fs--14 text-center">
+                        <p>Copyright &copy; Udyam'21. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Copyright End -->
+        </footer>
+        <!-- Footer Section End -->
+    </div>
+    <!-- Wrapper End -->
+
+    <!-- Back To Top Button Start -->
+    <div id="backToTop">
+        <a href="#" class="btn"><i class="fa fa-caret-up"></i></a>
+    </div>
+    <!-- Back To Top Button End -->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('#id_event').addClass('form-control');
+        $('#id_number_of_members').addClass('selecto form-control form-sm');
+    });
+    $(document).ready(function(){
+        document.getElementById('id_number_of_members').required = true;
+        $("#id_event").change(function(){
+            $(this).find("option:selected").each(function(){
+                var event = $(this).attr("value");
+                var year = '{{ user.Year }}'
+                
+                if(year == '2' || year == '3' || year == '4'){
+                    if(event == '5' || event == '6' || event == '8' || event == '9' || event == '10' || event == '11'){
+                        $('#id_number_of_members').html('<option value selected>Select No. Of Members</option>' + 
+                                                        '<option value="1">1</option>' +
+                                                        '<option value="2">2</option>');
+                        
+                    } else {
+                        $('#id_number_of_members').html('<option value selected>Select No. Of Members</option>' + 
+                                                        '<option value="1">1</option>' +
+                                                        '<option value="2">2</option>' + 
+                                                        '<option value="3">3</option>');
+                    }
+                } else if(year == '1'){
+                    $('#id_number_of_members').html('<option value selected>Select No. Of Members</option>' + 
+                                                        '<option value="1">1</option>' +
+                                                        '<option value="2">2</option>' + 
+                                                        '<option value="3">3</option>');
+                }
+            });
+            $('.newteam_email_ids').html('<div></div>');
+        }).change();
+    });
+    $(document).ready(function(){
+        $(".selecto").change(function(){
+            $(this).find("option:selected").each(function(){
+                var optionValue = $(this).attr("value");
+                console.log(optionValue);
+                if(optionValue == 1){
+                    console.log('111')
+                    var email_ids = document.getElementsByClassName('newteam_email_ids')
+                    console.log(email_ids)
+                    $('.newteam_email_ids').html('<div class="col-xs-12 3 boxo">' + 
+                                                    '<div class="form-group">' +
+                                                        '<label>' +
+                                                            '<span class="text-darker ff--primary fw--500">Leader Email</span>' +
+                                                            '{{ form.Team_leader }}' +
+                                                            '{% if form.Team_leader.error %}' +
+                                                                '<p style="color: red">{{ form.Team_leader.error }}</p>' +
+                                                            '{% endif %}' +
+                                                            '{% if emailerror %}' +
+                                                                '<p style="color: red">Fill the email</p>' +  
+                                                            '{% endif %}' + 
+                                                        '</label>' +
+                                                    '</div>' +
+                                                '</div>')
+                } else if(optionValue == 2){
+                    console.log('222')
+                    $('.newteam_email_ids').html('<div class="col-xs-12 3 boxo">' + 
+                                                    '<div class="form-group">' +
+                                                        '<label>' +
+                                                            '<span class="text-darker ff--primary fw--500">Leader Email</span>' +
+                                                            '{{ form.Team_leader }}' +
+                                                            '{% if form.Team_leader.error %}' +
+                                                                '<p style="color: red">{{ form.Team_leader.error }}</p>' +
+                                                            '{% endif %}' +
+                                                            '<span class="text-darker ff--primary fw--500">Member 1 Email</span>' +
+                                                            '{{ form.member1 }}' +
+                                                            '{% if form.member1.error %}' +
+                                                                '<p style="color: red">{{ form.member1.error }}</p>' +
+                                                            '{% endif %}' +
+                                                            '{% if emailerror %}' +
+                                                                '<p style="color: red">Fill the email</p>' +  
+                                                            '{% endif %}' +
+                                                        '</label>' +
+                                                    '</div>' +
+                                                '</div>')
+                } else if(optionValue == 3){
+                    $('.newteam_email_ids').html('<div class="col-xs-12 3 boxo">' + 
+                                                    '<div class="form-group">' +
+                                                        '<label>' +
+                                                            '<span class="text-darker ff--primary fw--500">Leader Email</span>' +
+                                                            '{{ form.Team_leader }}' +
+                                                            '{% if form.Team_leader.error %}' +
+                                                                '<p style="color: red">{{ form.Team_leader.error }}</p>' +
+                                                            '{% endif %}' +
+                                                            '<span class="text-darker ff--primary fw--500">Member 1 Email</span>' +
+                                                            '{{ form.member1 }}' +
+                                                            '{% if form.member1.error %}' +
+                                                                '<p style="color: red">{{ form.member1.error }}</p>' +
+                                                            '{% endif %}' +
+                                                            '<span class="text-darker ff--primary fw--500">Member 2 Email</span>' +
+                                                            '{{ form.member2 }}' +
+                                                            '{% if form.member2.error %}' +
+                                                                '<p style="color: red">{{ form.member2.error }}</p>' +
+                                                            '{% endif %}' +
+                                                            '{% if emailerror %}' +
+                                                                '<p style="color: red">Fill the email</p>' +  
+                                                            '{% endif %}' +
+                                                        '</label>' +
+                                                    '</div>' +
+                                                '</div>')
+                } else if(optionValue == 'SL'){
+                    $('.newteam_email_ids').html('<div></div>')
+                }
+            });
+        }).change();
+    });
+
+    </script>
+
+    <!-- ==== Plugins Bundle ==== -->
+    <script src="{% static 'dashboard/js/plugins.min.js' %}"></script>
+
+    <!-- ==== Main Script ==== -->
+    <script src="{% static 'dashboard/js/main.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,1127 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=News+Cycle:wght@700&family=Xanh+Mono&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+  <title>Udyam'21|Team</title>
+  <link href='https://fonts.googleapis.com/css?family=Megrim' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="{% static 'Css/teams.css' %}">
+  <style>
+    .sign{
+      text-align: center;
+      margin: 50px;
+    }
+    .sign{
+      
+      font-family: "Noto Sans", sans-serif;
+    }
+    .abcd{
+      font-family: 'News Cycle', sans-serif;
+    }
+    .logo{
+
+      position: fixed;
+      top: 3px;
+    }
+    .logomain{
+      width: 200px;
+      margin: 11px;
+    }
+    h2{
+      font-size: 3rem;
+      font-family: 'News Cycle', sans-serif;
+    }
+    .content{
+      font-size: 2rem;
+      font-family: 'News Cycle', sans-serif;
+    }
+    .social{
+      font-size: 1.7rem;
+    }
+    .pappu{
+      font-size: 1.3rem;
+    }
+    @media only screen and (min-width: 900px){
+    .logo1{
+      visibility: hidden;
+    }
+    }
+    @media only screen and (max-width: 900px) {
+      h2{
+      font-size: 2.5rem;
+    }
+    .content{
+      font-size: 1.5rem;
+    }
+    .pappu{
+      font-size: 1rem;
+    }
+      .logo{
+        visibility: hidden;
+        
+      }
+      .logo1{
+      display: block;
+        float: left;
+        margin: 5px;
+    }
+    .text-container{
+      text-align: left;
+    }
+      body{
+        text-align: center;
+      }
+      .abcd{
+        display: block;
+      }
+      
+}
+  </style>
+
+</head>
+
+<body>
+  
+  <div class="logo">
+    <section>
+      <a href="{% url 'home' %}"><img class="logomain" src="{% static 'Assets/udyamwhite2.png' %}" alt=""></a>
+    </section>
+  </div>
+  <!-- <div class="logo1">
+    <section>
+      <img class="logomain1" src="images/home.png" alt="">
+    </section>
+  </div> -->
+  <div class="container pappu">
+    <div class="sign">
+      <span class="fast-flicker">c</span>ore te<span class="flicker">a</span>m
+    </div>
+
+
+</div>
+
+        <div class="container abcd">
+
+          <div class="col-md-4 cardno1">
+            <div class="container tteam">
+              <div class="item-list">
+                <div class="item item-1">
+                  <div class="img"><a href="javascript:;">
+                      <!-- <div class="like"><i class="fa fa-whatsapp" aria-hidden="true"></i></div> -->
+                    </a>
+                    <div class="img-content" style="background-image: url({% static 'images/core4.png' %});"></div>
+                  </div>
+                  <div class="social"><a target="_blank"href="https://www.facebook.com/malay.shukla.73">
+                      <div class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                    </a><a target="_blank"href="https://www.instagram.com/idle_critic/">
+                      <div class="ig"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                    </a><a target="_blank"href="https://www.linkedin.com/in/malay-shukla-148a4a1a6">
+                      <div class="tw"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                    </a><a href="javascript:;"></a>
+                  </div>
+                  <div class="text-container">
+                    <h2 class="title">Malay Shukla</h2>
+                    <div class="content">
+                      <p>Convenor</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 cardno1">
+            <div class="container tteam">
+              <div class="item-list">
+                <div class="item item-1">
+                  <div class="img"><a href="javascript:;">
+                      <!-- <div class="like"><i class="fa fa-whatsapp" aria-hidden="true"></i></div> -->
+                    </a>
+                    <div class="img-content" style="background-image: url({% static 'images/core7.png' %});"></div>
+                  </div>
+                  <div class="social"><a href="javascript:;">
+                      <div class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                    </a><a href="javascript:;">
+                      <div class="ig"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                    </a><a target="_blank"href="https://www.linkedin.com/in/y-pankaj/">
+                      <div class="tw"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                    </a><a href="javascript:;"></a>
+                  </div>
+                  <div class="text-container">
+                    <h2 class="title">Pankaj Yadav</h2>
+                    <div class="content">
+                    <p> General Secretary</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div> 
+
+        <div class="container abcd">
+
+        <div class="col-md-4 cardno1">
+          <div class="container tteam">
+            <div class="item-list">
+              <div class="item item-1">
+                <div class="img"><a href="javascript:;">
+                    <!-- <div class="like"><i class="fa fa-whatsapp" aria-hidden="true"></i></div> -->
+                  </a>
+                  <div class="img-content" style="background-image: url({% static 'images/core6.png' %});"></div>
+                </div>
+                <div class="social"><a target="_blank"href="https://www.facebook.com/mohitshringi26">
+                    <div class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                  </a><a target="_blank"href="https://www.instagram.com/mohitshringi26/">
+                    <div class="ig"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                  </a><a target="_blank"href="https://www.linkedin.com/in/mohit-shringi-32a461193">
+                    <div class="tw"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                  </a><a href="javascript:;"></a>
+                </div>
+                <div class="text-container">
+                  <h2 class="title">Mohit Shringi</h2>
+                  <div class="content">
+                    <p>Joint General Secretary</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4 cardno1">
+          <div class="container tteam">
+            <div class="item-list">
+              <div class="item item-1">
+                <div class="img"><a href="javascript:;">
+                    <!-- <div class="like"><i class="fa fa-whatsapp" aria-hidden="true"></i></div> -->
+                  </a>
+                  <div class="img-content" style="background-image: url({% static 'images/core1.png' %});"></div>
+                </div>
+                <div class="social"><a target="_blank"href="https://www.facebook.com/ritweek.singh.129/">
+                    <div class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                  </a><a target="_blank"href="https://www.instagram.com/sir_ritweek_singh/">
+                    <div class="ig"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                  </a><a target="_blank"href="https://www.linkedin.com/in/ritweek-singh-46b76219a/">
+                    <div class="tw"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                  </a><a href="javascript:;"></a>
+                </div>
+                <div class="text-container">
+                  <h2 class="title">Ritweek Singh</h2>
+                  <div class="content">
+                    <p>Co Convenor</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-md-4 cardno1">
+          <div class="container tteam">
+            <div class="item-list">
+              <div class="item item-1">
+                <div class="img"><a href="javascript:;">
+                    <!-- <div class="like"><i class="fa fa-whatsapp" aria-hidden="true"></i></div> -->
+                  </a>
+                  <div class="img-content" style="background-image: url({% static 'images/core3.png' %});"></div>
+                </div>
+                <div class="social"><a target="_blank"href="https://www.facebook.com/ankur.agrawal.17">
+                    <div class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                  </a><a href="javascript:;">
+                    <div class="ig"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                  </a><a target="_blank"href="https://www.linkedin.com/in/ankur-agrawal-855103170">
+                    <div class="tw"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                  </a><a href="javascript:;"></a>
+                </div>
+                <div class="text-container">
+                  <h2 class="title">Ankur Agrawal</h2>
+                  <div class="content">
+                    <p>Joint General Secretary</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+       <div class="container abcd">
+
+           <div class="col-md-4 cardno1">
+                <div class="container tteam">
+                  <div class="item-list">
+                    <div class="item item-1">
+                      <div class="img"><a href="javascript:;">
+                          <!-- <div class="like"><i class="fa fa-whatsapp" aria-hidden="true"></i></div> -->
+                        </a>
+                        <div class="img-content" style="background-image: url({% static 'images/core5.png' %});"></div>
+                      </div>
+                      <div class="social"><a target="_blank"href="https://www.facebook.com/profile.php?id=100004717997337">
+                          <div class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                        </a><a target="_blank"href="https://www.instagram.com/dinesh_easwar/">
+                          <div class="ig"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                        </a><a target="_blank"href="https://www.linkedin.com/in/dinesh-easwaravaka-a83813171">
+                          <div class="tw"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                        </a><a href="javascript:;"></a>
+                      </div>
+                      <div class="text-container">
+                        <h2 class="title">Dinesh Easwaravaka</h2>
+                        <div class="content">
+                        <p>Tech Secretary</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 cardno1">
+                <div class="container tteam">
+                  <div class="item-list">
+                    <div class="item item-1">
+                      <div class="img"><a href="javascript:;">
+                          <!-- <div class="like"><i class="fa fa-whatsapp" aria-hidden="true"></i></div> -->
+                        </a>
+                        <div class="img-content" style="background-image: url({% static 'images/core2.png' %});"></div>
+                      </div>
+                      <div class="social"><a href="javascript:;">
+                          <div class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                        </a><a target="_blank"href="https://www.instagram.com/samarth_solanki10/">
+                          <div class="ig"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                        </a><a target="_blank"href="https://www.linkedin.com/in/samarth-solanki/">
+                          <div class="tw"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                        </a><a href="javascript:;"></a>
+                      </div>
+                      <div class="text-container">
+                        <h2 class="title">Samarth Solanki</h2>
+                        <div class="content">
+                        <p>Tech Secretary</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="container pappu">
+        <div class="sign">
+          <span class="fast-flicker">S</span>enior <span class="flicker">A</span>dviso<span class="flicker">r</span>s
+        </div>
+      </div>
+    
+        <div class="container abcd">
+
+          <div class="col-md-4 cardno1">
+            <div class="container tteam">
+              <div class="item-list">
+                <div class="item item-1">
+                  <div class="img"><a href="javascript:;">
+                      <!-- <div class="like"><i class="fa fa-whatsapp" aria-hidden="true"></i></div> -->
+                    </a>
+                    <div class="img-content" style="background-image: url({% static 'images/senior1.png' %});"></div>
+                  </div>
+                  <div class="social"><a target="_blank"href="https://www.facebook.com/vinit.patra.7">
+                      <div class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                    </a><a target="_blank"href="https://www.instagram.com/vinitpatra99/">
+                      <div class="ig"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                    </a><a target="_blank"href="https://www.linkedin.com/in/vinit-patra-803b48180/">
+                      <div class="tw"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                    </a><a href="javascript:;"></a>
+                  </div>
+                  <div class="text-container">
+                    <h2 class="title">Vinit Kumar Patra</h2>
+                    <div class="content">
+                      <p>Senior Advisor</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 cardno1">
+            <div class="container tteam">
+              <div class="item-list">
+                <div class="item item-1">
+                  <div class="img"><a href="javascript:;">
+                      <!-- <div class="like"><i class="fa fa-whatsapp" aria-hidden="true"></i></div> -->
+                    </a>
+                    <div class="img-content" style="background-image: url({% static 'images/senior2.png' %});"></div>
+                  </div>
+                  <div class="social"><a target="_blank"href="https://www.facebook.com/vishrut.bohara.7">
+                      <div class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                    </a><a target="_blank"href="https://www.instagram.com/vishrut.2311/">
+                      <div class="ig"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                    </a><a target="_blank"href="https://www.linkedin.com/in/vishrut-bohara-982686179">
+                      <div class="tw"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                    </a><a href="javascript:;"></a>
+                  </div>
+                  <div class="text-container">
+                    <h2 class="title">Vishrut Bohara</h2>
+                    <div class="content">
+                      <p>Senior Advisor</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>   
+
+        <div class="container abcd">
+
+          <div class="col-md-4 cardno1">
+            <div class="container tteam">
+              <div class="item-list">
+                <div class="item item-1">
+                  <div class="img"><a href="javascript:;">
+                      <!-- <div class="like"><i class="fa fa-whatsapp" aria-hidden="true"></i></div> -->
+                    </a>
+                    <div class="img-content" style="background-image: url({% static 'images/senior3.jpg' %});"></div>
+                  </div>
+                  <div class="social"><a target="_blank"href="https://www.facebook.com/sacsham.agrawal.142/">
+                      <div class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                    </a><a target="_blank"href="https://www.instagram.com/sacshamagrawal/">
+                      <div class="ig"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                    </a><a target="_blank"href="https://www.linkedin.com/in/sacshamagrawal/">
+                      <div class="tw"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                    </a><a href="javascript:;"></a>
+                  </div>
+                  <div class="text-container">
+                    <h2 class="title">Sacsham Agrawal</h2>
+                    <div class="content">
+                      <p>Senior Advisor</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 cardno1">
+            <div class="container tteam">
+              <div class="item-list">
+                <div class="item item-1">
+                  <div class="img"><a href="javascript:;">
+                      <!-- <div class="like"><i class="fa fa-whatsapp" aria-hidden="true"></i></div> -->
+                    </a>
+                    <div class="img-content" style="background-image: url({% static 'images/senior4.jpg' %});"></div>
+                  </div>
+                  <div class="social"><a target="_blank"href="https://www.facebook.com/shravan.nayak.5895/">
+                      <div class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                    </a><a href="javascript:;">
+                      <div class="ig"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                    </a><a target="_blank"href="https://www.linkedin.com/in/shravan-nayak-943650161/">
+                      <div class="tw"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                    </a><a href="javascript:;"></a>
+                  </div>
+                  <div class="text-container">
+                    <h2 class="title">Shravan Nayak</h2>
+                    <div class="content">
+                      <p>Senior Advisor</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+      <div class="container pappu">
+        <div class="sign">
+          <span class="fast-flicker">D</span>evel<span class="flicker">o</span>per<span class="flicker">s</span>
+        </div>
+      </div>
+    
+        <div class="container abcd">
+          
+    
+    
+          <div class="col-md-4 cardno1">
+            <div class="container tteam">
+              <div class="item-list">
+                <div class="item item-1">
+                  <div class="img"><a href="javascript:;">
+                      <!-- <div class="like"><i class="fa fa-whatsapp" aria-hidden="true"></i></div> -->
+                    </a>
+                    <div class="img-content" style="background-image: url({% static 'images/suhas.png' %});"></div>
+                  </div>
+                  <div class="social"><a target="_blank"href="https://www.facebook.com/suha.suhas.7/">
+                      <div class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                    </a><a target="_blank"href="https://www.instagram.com/suhas_alavala/">
+                      <div class="ig"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                    </a><a target="_blank"href="https://www.linkedin.com/in/alavala-venkata-dharma-suhas-8992a41a0/">
+                      <div class="tw"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                    </a><a href="javascript:;"></a>
+                  </div>
+                  <div class="text-container">
+                    <h2 class="title">Suhas Alavala</h2>
+                    <div class="content">
+                      <p>Web Head</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 cardno1">
+            <div class="container tteam">
+              <div class="item-list">
+                <div class="item item-1">
+                  <div class="img"><a href="javascript:;">
+                      <!-- <div class="like"><i class="fa fa-whatsapp" aria-hidden="true"></i></div> -->
+                    </a>
+                    <div class="img-content" style="background-image: url({% static 'images/akshat.jpg' %});"></div>
+                  </div>
+                  <div class="social"><a target="_blank"href="https://www.facebook.com/akshat.goyal.3551/">
+                    <div class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                  </a><a target="_blank"href="https://www.instagram.com/akshatgoyal1103/">
+                    <div class="ig"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                  </a><a target="_blank"href="https://www.linkedin.com/in/akshat-goyal-387b561a3/">
+                    <div class="tw"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                  </a><a href="javascript:;"></a>
+                </div>
+                  <div class="text-container">
+                    <h2 class="title">Akshat Goyal</h2>
+                    <div class="content">
+                      <p>Web Secretary</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="container abcd">
+          
+          
+
+          <div class="col-md-4 cardno1">
+            <div class="container tteam">
+              <div class="item-list">
+                <div class="item item-1">
+                  <div class="img"><a href="javascript:;">
+                      
+                    </a>
+                    <div class="img-content" style="background-image: url({% static 'images/aman.png' %});"></div>
+                  </div>
+                  <div class="social"><a href="javascript:;">
+                      <div class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                    </a><a href="javascript:;">
+                      <div class="ig"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                    </a><a href="javascript:;">
+                      <div class="tw"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                    </a><a href="javascript:;"></a>
+                  </div>
+                  <div class="text-container">
+                    <h2 class="title">Aman Sharma</h2>
+                    <div class="content">
+                      <p>Web Coordinator</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-4 cardno1">
+            <div class="container tteam">
+              <div class="item-list">
+                <div class="item item-1">
+                  <div class="img"><a href="javascript:;">
+                      <!-- <div class="like"><i class="fa fa-whatsapp" aria-hidden="true"></i></div> -->
+                    </a>
+                    <div class="img-content" style="background-image: url({% static 'images/charu.png' %});"></div>
+                  </div>
+                  <div class="social"><a target="_blank"href="https://www.facebook.com/profile.php?id=100039543491383">
+                      <div class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                    </a><a target="_blank"href="https://www.instagram.com/azor_ahai_01/">
+                      <div class="ig"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                    </a><a target="_blank"href="https://www.linkedin.com/in/charu-gupta-12b385196/">
+                      <div class="tw"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                    </a><a href="javascript:;"></a>
+                  </div>
+                  <div class="text-container">
+                    <h2 class="title">Charu Gupta</h2>
+                    <div class="content">
+                      <p>Web Coordinator</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-4 cardno1">
+            <div class="container tteam">
+              <div class="item-list">
+                <div class="item item-1">
+                  <div class="img"><a href="javascript:;">
+                      
+                    </a>
+                    <div class="img-content" style="background-image: url({% static 'images/web.png' %});"></div>
+                  </div>
+                  <div class="social"><a target="_blank"href="https://www.facebook.com/profile.php?id=100026364677609">
+                      <div class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                    </a><a target="_blank"href="https://www.instagram.com/yashjain484/">
+                      <div class="ig"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                    </a><a href="javascript:;">
+                      <div class="tw"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                    </a><a href="javascript:;"></a>
+                  </div>
+                  <div class="text-container">
+                    <h2 class="title">Yash Jain</h2>
+                    <div class="content">
+                      <p>Web Coordinator</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+
+        <div class="container pappu">
+          <div class="sign">
+            <span class="fast-flicker">D</span>esig<span class="flicker">n</span>er<span class="flicker">s</span>
+          </div>
+        </div>
+      
+          <div class="container abcd">
+          
+
+            <div class="col-md-4 cardno1">
+              <div class="container tteam">
+                <div class="item-list">
+                  <div class="item item-1">
+                    <div class="img"><a href="javascript:;">
+                        <!-- <div class="like"><i class="fa fa-whatsapp" aria-hidden="true"></i></div> -->
+                      </a>
+                      <div class="img-content" style="background-image: url({% static 'images/sanjiti.png' %});"></div>
+                    </div>
+                    <div class="social"><a target="_blank"href="https://www.facebook.com/sanjiti.varshney">
+                        <div class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                      </a><a target="_blank"href="https://www.instagram.com/sanji156/">
+                        <div class="ig"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                      </a><a target="_blank"href="https://www.linkedin.com/in/sanjiti-varshney-19b605187">
+                        <div class="tw"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                      </a><a href="javascript:;"></a>
+                    </div>
+                    <div class="text-container">
+                      <h2 class="title">Sanjiti Varshney</h2>
+                      <div class="content">
+                        <p>Design Head</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-md-4 cardno1">
+              <div class="container tteam">
+                <div class="item-list">
+                  <div class="item item-1">
+                    <div class="img"><a href="javascript:;">
+                        <!-- <div class="like"><i class="fa fa-whatsapp" aria-hidden="true"></i></div> -->
+                      </a>
+                      <div class="img-content" style="background-image: url({% static 'images/manasy.png' %});"></div>
+                    </div>
+                    <div class="social"><a target="_blank"href="https://www.facebook.com/manasy.panicker.3">
+                        <div class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                      </a><a target="_blank"href="https://instagram.com/panicker.manasy/">
+                        <div class="ig"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                      </a><a target="_blank"href="https://www.linkedin.com/in/manasy-panicker-6287861a9">
+                        <div class="tw"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                      </a><a href="javascript:;"></a>
+                    </div>
+                    <div class="text-container">
+                      <h2 class="title">Manasy Panicker</h2>
+                      <div class="content">
+                        <p>Design Head</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="container abcd">
+
+
+
+            <div class="col-md-4 cardno1">
+              <div class="container tteam">
+                <div class="item-list">
+                  <div class="item item-1">
+                    <div class="img"><a href="javascript:;">
+                        <!-- <div class="like"><i class="fa fa-whatsapp" aria-hidden="true"></i></div> -->
+                      </a>
+                      <div class="img-content" style="background-image: url({% static 'images/design.png' %});"></div>
+                    </div>
+                    <div class="social"><a target="_blank"href="https://www.facebook.com/sushil.kalwa.9/">
+                        <div class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                      </a><a target="_blank"href="https://www.instagram.com/sushil_kalwa20/">
+                        <div class="ig"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                      </a><a target="_blank"href="https://www.linkedin.com/in/sushil-kalwa-6423741a4/">
+                        <div class="tw"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                      </a><a href="javascript:;"></a>
+                    </div>
+                    <div class="text-container">
+                      <h2 class="title">Sushil Kalwa</h2>
+                      <div class="content">
+                        <p>Design Coordinator</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="col-md-4 cardno1">
+              <div class="container tteam">
+                <div class="item-list">
+                  <div class="item item-1">
+                    <div class="img"><a href="javascript:;">
+                        <!-- <div class="like"><i class="fa fa-whatsapp" aria-hidden="true"></i></div> -->
+                      </a>
+                      <div class="img-content" style="background-image: url({% static 'images/siddharth.png' %});"></div>
+                    </div>
+                    <div class="social"><a target="_blank"href="https://www.facebook.com/siddharthanand.srivastav">
+                        <div class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                      </a><a target="_blank"href="https://www.instagram.com/_siddharth__101/">
+                        <div class="ig"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                      </a><a target="_blank"href="https://www.linkedin.com/in/siddharth-anand-srivastav-767206190">
+                        <div class="tw"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                      </a><a href="javascript:;"></a>
+                    </div>
+                    <div class="text-container">
+                      <h2 class="title">Siddharth Anand</h2>
+                      <div class="content">
+                        <p>Design Coordinator</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-md-4 cardno1">
+              <div class="container tteam">
+                <div class="item-list">
+                  <div class="item item-1">
+                    <div class="img"><a href="javascript:;">
+                        <!-- <div class="like"><i class="fa fa-whatsapp" aria-hidden="true"></i></div> -->
+                      </a>
+                      <div class="img-content" style="background-image: url({% static 'images/charu.png' %});"></div>
+                    </div>
+                    <div class="social"><a target="_blank"href="https://www.facebook.com/profile.php?id=100039543491383">
+                      <div class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                    </a><a target="_blank"href="https://www.instagram.com/azor_ahai_01/">
+                      <div class="ig"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                    </a><a target="_blank"href="https://www.linkedin.com/in/charu-gupta-12b385196/">
+                      <div class="tw"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                    </a><a href="javascript:;"></a>
+                  </div>
+                    <div class="text-container">
+                      <h2 class="title">Charu Gupta</h2>
+                      <div class="content">
+                        <p>Design Coordinator</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+          </div>
+
+          <div class="container pappu">
+            <div class="sign">
+              <span class="fast-flicker">C</span>ontent And <span class="flicker">C</span>rea<span class="flicker">t</span>iv<span class="fast-flicker">e</span>
+            </div>
+          </div>
+        
+            <div class="container abcd">
+            
+
+              <div class="col-md-4 cardno1">
+                <div class="container tteam">
+                  <div class="item-list">
+                    <div class="item item-1">
+                      <div class="img"><a href="javascript:;">
+                          <!-- <div class="like"><i class="fa fa-whatsapp" aria-hidden="true"></i></div> -->
+                        </a>
+                        <div class="img-content" style="background-image: url({% static 'images/contenthead.png' %});"></div>
+                      </div>
+                      <div class="social"><a target="_blank"href="https://www.facebook.com/apg1167">
+                          <div class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                        </a><a target="_blank"href="https://www.instagram.com/aditya_prakash_gupta">
+                          <div class="ig"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                        </a><a target="_blank"href="https://www.linkedin.com/in/aditya-prakash-gupta">
+                          <div class="tw"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                        </a><a href="javascript:;"></a>
+                      </div>
+                      <div class="text-container">
+                        <h2 class="title">Aditya Prakash Gupta</h2>
+                        <div class="content">
+                          <p>Content Head</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 cardno1">
+                <div class="container tteam">
+                  <div class="item-list">
+                    <div class="item item-1">
+                      <div class="img"><a href="javascript:;">
+                          <!-- <div class="like"><i class="fa fa-whatsapp" aria-hidden="true"></i></div> -->
+                        </a>
+                        <div class="img-content" style="background-image: url({% static 'images/content.png' %});"></div>
+                      </div>
+                      <div class="social"><a target="_blank"href="https://www.facebook.com/profile.php?id=100015624429511">
+                          <div class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                        </a><a target="_blank"href="https://www.instagram.com/jay.shri.ram/">
+                          <div class="ig"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                        </a><a target="_blank"href="https://www.linkedin.com/in/vaibhav-singh-02b1a6191">
+                          <div class="tw"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                        </a><a href="javascript:;"></a>
+                      </div>
+                      <div class="text-container">
+                        <h2 class="title">Vaibhav Singh</h2>
+                        <div class="content">
+                          <p>Content Coordinator</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 cardno1">
+                <div class="container tteam">
+                  <div class="item-list">
+                    <div class="item item-1">
+                      <div class="img"><a href="javascript:;">
+                          <!-- <div class="like"><i class="fa fa-whatsapp" aria-hidden="true"></i></div> -->
+                        </a>
+                        <div class="img-content" style="background-image: url({% static 'images/content2.png' %});"></div>
+                      </div>
+                      <div class="social"><a target="_blank"href="https://www.facebook.com/ashirwad.singh.56">
+                        <div class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                      </a><a target="_blank"href="https://www.instagram.com/_ashirwad.singh_/">
+                        <div class="ig"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                      </a><a target="_blank"href="https://www.linkedin.com/in/ashirwad-singh-778b981a3">
+                        <div class="tw"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                      </a><a href="javascript:;"></a>
+                    </div>
+                      <div class="text-container">
+                        <h2 class="title">Ashirwad Singh</h2>
+                        <div class="content">
+                          <p>Content Coordinator</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+            </div>
+
+
+            <div class="container pappu">
+              <div class="sign">
+                <span class="fast-flicker">M</span>arketi<span class="flicker">n</span>g T<span class="flicker">e</span>am
+              </div>
+            </div>
+          
+              <div class="container abcd">
+
+                <div class="col-md-4 cardno1">
+                  <div class="container tteam">
+                    <div class="item-list">
+                      <div class="item item-1">
+                        <div class="img"><a href="javascript:;">
+                            <!-- <div class="like"><i class="fa fa-whatsapp" aria-hidden="true"></i></div> -->
+                          </a>
+                          <div class="img-content" style="background-image: url({% static 'images/marketing1.png' %});"></div>
+                        </div>
+                        <div class="social"><a target="_blank"href="https://www.facebook.com/hawk.kill.28">
+                            <div class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                          </a><a target="_blank"href="https://www.instagram.com/___forbioser__/">
+                            <div class="ig"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                          </a><a target="_blank"href="https://www.linkedin.com/in/amritesh-srivastava-666372168">
+                            <div class="tw"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                          </a><a href="javascript:;"></a>
+                        </div>
+                        <div class="text-container">
+                          <h2 class="title">Amritesh Srivastava</h2>
+                          <div class="content">
+                            <p>Marketing Head</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-md-4 cardno1">
+                  <div class="container tteam">
+                    <div class="item-list">
+                      <div class="item item-1">
+                        <div class="img"><a href="javascript:;">
+                            <!-- <div class="like"><i class="fa fa-whatsapp" aria-hidden="true"></i></div> -->
+                          </a>
+                          <div class="img-content" style="background-image: url({% static 'images/marketing2.png' %});"></div>
+                        </div>
+                        <div class="social"><a target="_blank"href="https://www.facebook.com/ishan.amrit.7">
+                            <div class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                          </a><a target="_blank"href="https://www.instagram.com/mohitshringi26/">
+                            <div class="ig"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                          </a><a target="_blank"href="https://www.linkedin.com/in/ishan-amrit-753191173/">
+                            <div class="tw"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                          </a><a href="javascript:;"></a>
+                        </div>
+                        <div class="text-container">
+                          <h2 class="title">Ishan Amrit</h2>
+                          <div class="content">
+                            <p>Marketing Coordinator</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 cardno1">
+                  <div class="container tteam">
+                    <div class="item-list">
+                      <div class="item item-1">
+                        <div class="img"><a href="javascript:;">
+                            <!-- <div class="like"><i class="fa fa-whatsapp" aria-hidden="true"></i></div> -->
+                          </a>
+                          <div class="img-content" style="background-image: url({% static 'images/marketing3.png' %});"></div>
+                        </div>
+                        <div class="social"><a target="_blank"href="https://www.facebook.com/kunal.km.9">
+                          <div class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                        </a><a target="_blank"href="https://www.instagram.com/kunal.mishra_7/">
+                          <div class="ig"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                        </a><a target="_blank"href="https://www.linkedin.com/in/kunalmishra210/">
+                          <div class="tw"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                        </a><a href="javascript:;"></a>
+                      </div>
+                        <div class="text-container">
+                          <h2 class="title">Kunal Mishra</h2>
+                          <div class="content">
+                            <p>Marketing Coordinator</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               </div> 
+
+
+               <div class="container pappu">
+                <div class="sign">
+                  <span class="fast-flicker">E</span>xternal <span class="flicker">A</span>ffa<span class="flicker">i</span>rs
+                </div>
+              </div>
+            
+                <div class="container abcd">
+                  
+                  <div class="col-md-4 cardno1">
+                    <div class="container tteam">
+                      <div class="item-list">
+                        <div class="item item-1">
+                          <div class="img"><a href="javascript:;">
+                              <!-- <div class="like"><i class="fa fa-whatsapp" aria-hidden="true"></i></div> -->
+                            </a>
+                            <div class="img-content" style="background-image: url({% static 'images/external1.png' %});"></div>
+                          </div>
+                          <div class="social"><a target="_blank"href="https://www.facebook.com/mayank1618">
+                            <div class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                          </a><a target="_blank"href="https://www.instagram.com/__.namikaze.__/">
+                            <div class="ig"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                          </a><a target="_blank"href="https://www.linkedin.com/in/mayank-c-a26388122">
+                            <div class="tw"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                          </a><a href="javascript:;"></a>
+                        </div>
+                          <div class="text-container">
+                            <h2 class="title">Mayank Chakravorty</h2>
+                            <div class="content">
+                              <p>External Affairs Head</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="col-md-4 cardno1">
+                    <div class="container tteam">
+                      <div class="item-list">
+                        <div class="item item-1">
+                          <div class="img"><a href="javascript:;">
+                              <!-- <div class="like"><i class="fa fa-whatsapp" aria-hidden="true"></i></div> -->
+                            </a>
+                            <div class="img-content" style="background-image: url({% static 'images/external2.png' %});"></div>
+                          </div>
+                          <div class="social"><a target="_blank"href="https://www.facebook.com/milan.goyal.79/">
+                            <div class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                          </a><a target="_blank"href="https://www.instagram.com/milan_2279/">
+                            <div class="ig"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                          </a><a target="_blank"href="https://www.linkedin.com/in/milan-goyal-779758195">
+                            <div class="tw"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                          </a><a href="javascript:;"></a>
+                        </div>
+                          <div class="text-container">
+                            <h2 class="title">Milan Goyal</h2>
+                            <div class="content">
+                              <p>External Affairs Coordinator</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 cardno1">
+                    <div class="container tteam">
+                      <div class="item-list">
+                        <div class="item item-1">
+                          <div class="img"><a href="javascript:;">
+                              <!-- <div class="like"><i class="fa fa-whatsapp" aria-hidden="true"></i></div> -->
+                            </a>
+                            <div class="img-content" style="background-image: url({% static 'images/external3.png' %});"></div>
+                          </div>
+                          <div class="social"><a target="_blank"href="https://www.facebook.com/anagh.sharma.90">
+                            <div class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                          </a><a target="_blank"href="https://www.instagram.com/s_anagh/">
+                            <div class="ig"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                          </a><a target="_blank"href="https://www.linkedin.com/in/anagh-sharma16">
+                            <div class="tw"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                          </a><a href="javascript:;"></a>
+                        </div>
+                          <div class="text-container">
+                            <h2 class="title">Anagh Sharma</h2>
+                            <div class="content">
+                              <p>External Affairs Coordinator</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="container pappu">
+                  <div class="sign">
+                    <span class="fast-flicker">P</span>ublic <span class="flicker">R</span>ela<span class="flicker">t</span>ions
+                  </div>
+                </div>
+              
+                  <div class="container abcd">
+                    <div class="col-md-4 cardno1">
+                      <div class="container tteam">
+                        <div class="item-list">
+                          <div class="item item-1">
+                            <div class="img"><a href="javascript:;">
+                                <!-- <div class="like"><i class="fa fa-whatsapp" aria-hidden="true"></i></div> -->
+                              </a>
+                              <div class="img-content" style="background-image: url({% static 'images/pr1.png' %});"></div>
+                            </div>
+                            <div class="social"><a target="_blank"href="https://www.facebook.com/profile.php?id=100027869762257">
+                                <div class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                              </a><a target="_blank"href="https://www.instagram.com/harshitgupta290/">
+                                <div class="ig"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                              </a><a target="_blank"href="https://www.linkedin.com/in/harshit-gupta-656131170">
+                                <div class="tw"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                              </a><a href="javascript:;"></a>
+                            </div>
+                            <div class="text-container">
+                              <h2 class="title">Harshit Gupta</h2>
+                              <div class="content">
+                                <p>PR Head</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 cardno1">
+                      <div class="container tteam">
+                        <div class="item-list">
+                          <div class="item item-1">
+                            <div class="img"><a href="javascript:;">
+                                <!-- <div class="like"><i class="fa fa-whatsapp" aria-hidden="true"></i></div> -->
+                              </a>
+                              <div class="img-content" style="background-image: url({% static 'images/pr2.png' %});"></div>
+                            </div>
+                            <div class="social"><a target="_blank"href="https://www.facebook.com/varun.bondre">
+                                <div class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                              </a><a target="_blank"href="https://www.instagram.com/varun_bondre/">
+                                <div class="ig"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                              </a><a target="_blank"href="https://www.linkedin.com/in/varun-bondre-1b2a771a5">
+                                <div class="tw"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                              </a><a href="javascript:;"></a>
+                            </div>
+                            <div class="text-container">
+                              <h2 class="title">Varun Vijay Bondre</h2>
+                              <div class="content">
+                                <p>PR Coordinator</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+</body>
+
+</html>

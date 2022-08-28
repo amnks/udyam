@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+
+#heading-container {
+  width: 500px;
+  margin: auto;
+}
+
+/*Neon*/
+.headingp {
+  text-align: center;
+  color: #03e9f4;
+  font-size: 4em;
+  margin: 20px 0 20px 0;
+}
+
+.headinga {
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.headingp .headinga {
+  color: #03e9f4;
+  font-family: Monoton;
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+ .headingp .headinga:hover {
+  color: #03e9f4;
+  -webkit-animation: none;
+  -moz-animation: none;
+  animation: none;
+}
+
+/*glow for webkit*/
+
+@-webkit-keyframes neon1 {
+  from {
+    text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #03e9f4, 0 0 2px #03e9f4, 0 0 2px #03e9f4, 0 0 2px #03e9f4, 0 0 2px #03e9f4;
+  }
+  to {
+    text-shadow: 0 0 0px #fff, 0 0 0px #fff, 0 0 0px #fff, 0 0 0px #03e9f4, 0 0 0px #03e9f4, 0 0 0px #03e9f4, 0 0 0px #03e9f4, 0 0 0px #03e9f4;
+  }
+}
+
+/*glow for mozilla*/
+
+@-moz-keyframes neon1 {
+  from {
+    text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #03e9f4, 0 0 2px #03e9f4, 0 0 2px #03e9f4, 0 0 2px #03e9f4, 0 0 2px #03e9f4;
+  }
+  to {
+    text-shadow: 0 0 0px #fff, 0 0 0px #fff, 0 0 0px #fff, 0 0 0px #03e9f4, 0 0 0px #03e9f4, 0 0 0px #03e9f4, 0 0 0px #03e9f4, 0 0 0px #03e9f4;
+  }
+}
+
+/*glow*/
+
+@keyframes neon1 {
+  from {
+    text-shadow: 0 0 1.5px #fff, 0 0 1.5px #fff, 0 0 1.5px #fff, 0 0 1.5px #03e9f4, 0 0 1.5px #03e9f4, 0 0 1.5px #03e9f4, 0 0 1.5px #03e9f4, 0 0 1.5px #03e9f4;
+  }
+  to {
+    text-shadow: 0 0 0px #fff, 0 0 0px #fff, 0 0 0px #fff, 0 0 0px #03e9f4, 0 0 0px #03e9f4, 0 0 0px #03e9f4, 0 0 0px #03e9f4, 0 0 0px #03e9f4;
+  }
+}
+/*REEEEEEEEEEESPONSIVE*/
+
+@media (max-width: 650px) {
+  #container {
+    width: auto;
+  }
+  .headingp {
+    font-size: 2em;
+  }
+}

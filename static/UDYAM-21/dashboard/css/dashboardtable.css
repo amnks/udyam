@@ -1,0 +1,85 @@
+.maintable {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.25;
+}
+
+.workshoptable {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  /* .workshoptable-layout: fixed; */
+}
+
+.workshoptable caption {
+  font-size: 1.5em;
+  margin: 0.5em 0 0.75em;
+}
+
+.workshoptable tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 0.35em;
+}
+
+.workshoptable th,
+.workshoptable td {
+  padding: 0.625em;
+  text-align: center;
+}
+
+.workshoptable th {
+  font-size: 0.85em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  .workshoptable {
+    border: 0;
+  }
+
+  .workshoptable caption {
+    font-size: 1.3em;
+  }
+
+  .workshoptable thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  .workshoptable tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: 0.625em;
+  }
+
+  .workshoptable td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 0.8em;
+    text-align: right;
+  }
+
+  .workshoptable td::before {
+    /*
+      * aria-label has no advantage, it won't be read inside a .workshoptable
+      content: attr(aria-label);
+      */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .workshoptable td:last-child {
+    border-bottom: 0;
+  }
+}

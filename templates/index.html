@@ -1,0 +1,1312 @@
+{% load static %}<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udyam'21</title>
+    <link rel = "icon" href =  "{% static 'Assets/logo2.ico' %}" type = "image/x-icon">
+    <base href="/" />
+    <!-- backtotop??????????????????????????????????????????? -->
+    <!--countdown-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'vendor/animate/animate.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'vendor/countdowntime/flipclock.css' %}">
+
+
+    <!-- speaker????????? -->
+    <link rel="stylesheet" href="{% static 'Css/style (1).css' %}">
+    <link rel="stylesheet" href="{% static 'Css/neontext.css' %}">
+    <link rel="stylesheet" href="{% static 'Css/video.css' %}">
+    <link rel="stylesheet" href="{% static 'Css/speaker.css' %}">
+    <!-- schedule -->
+    <link rel="stylesheet" href="{% static 'Css/main.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet"
+        id="bootstrap-css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="{% static 'Javascript/jquery.waypoints.min.js' %}"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="{% static 'Javascript/main.js' %}"></script>
+
+    <!-- events -->
+
+
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'Css/countdown.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'Css/linkstyles.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'Css/aboutus.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'Css/Events.css' %}" />
+
+    <!-- navbar -->
+    <link rel="stylesheet" type="text/css" href="{% static 'Css/normalize.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'Css/demo.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'Css/component.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'Css/mobile2.css' %}" />
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url("{% static 'Assets/background7.png' %}");
+            background-size: cover;
+            background-attachment: fixed;
+            color: rgba(255, 255, 255, 0.9);
+            font-family: "Nunito Sans", sans-serif;
+            overflow-x: hidden;
+        }
+        @media only screen and (max-width: 700px) {
+            body{
+                background-image: url("{% static 'Assets/background7mobile.png' %}");
+                background-position: center;
+                background-attachment: fixed;
+            }
+        }
+        
+        .section--menu{
+                background-color: black;
+                margin: 0px;
+                padding: 0px;
+                min-height: 0px;
+                padding-top: 1rem;
+                height: 75px;
+
+            }
+            .menu__link{
+                color: white;
+                font-size: 22px;
+                opacity: 1;
+                
+            }
+            .menu__helper{
+                font-size: 22px;
+            }
+            .udyam--logo{
+                height: 42px;
+            }
+            @media only screen and (min-width: 1400px) {
+                .udyam--logo{
+                /* display: none; */
+                height: 58px;
+            }
+            }
+            @media only screen and (min-width: 1200px) {
+            .signinbutton{
+                display: inline; position: fixed ; top: 19px; z-index: 500; right: 50px;
+            }
+            .logogood{
+                display: inline; position: fixed ; top: 10px; z-index: 500; left: 32px;
+            }
+            .container-mobile {
+                display: none;
+            }
+            .mobilenav {
+                display: none;
+            }
+            .navynavy{
+                height: 75px;
+                background-color: black;
+                position: sticky;
+                top: 0;
+                z-index: 300;
+            }
+        }
+            @media only screen and (max-width: 1200px) {
+            .windowview{
+                display: none;
+            }
+            .udyam--logo{
+                /* display: none; */
+                height: 45px;
+            }
+            .logogood{
+                display: inline; position: fixed ; top: 9px; z-index: 500; left: 15px;
+            }
+            .mobilenav{
+                z-index: 300;
+                width: 100%;
+                height: 60px;
+                background-color: black;
+                position: -webkit-sticky;
+                position: sticky;
+                top: 0;
+            }
+            .container-mobile{
+                position: fixed;
+                height: 90px;
+                width: 100%;
+                z-index: 300;
+                top: 0px;
+            }
+            .container-mobile-height{
+                height: 100%;
+            }
+            .signinbutton{
+                display: none;
+            }
+        }
+        /* @media (min-width: 1200px) and (min-width: 1400){ */
+
+            
+        
+        .menu__item a:hover{
+            text-decoration: none;
+        }
+        body{
+            height: 100%;
+        }
+        #loader{
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: #000000 url("{% static 'Assets/loading.gif' %}") no-repeat center;
+            z-index: 1000;
+        }
+
+
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet"
+        id="bootstrap-css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href='https://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet' />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+</head>
+
+<body onload="loaderDisable()">
+    <div id="loader"></div>
+
+    <div class="mobilenav"></div>
+    <div class="navynavy">
+    <!-- navbar------------------------------------------ -->
+        {% if user.is_authenticated %}
+            <div class="signinbutton">
+                <a class="btn btn-outline-success" href="{% url 'dashboard' %}">Dashboard</a>
+            </div>
+        {% else %}
+            <div class="signinbutton">
+                <a class="btn btn-outline-success" href="{% url 'login' %}">Sign In</a>
+            </div>
+        {% endif %}
+    
+        <div class="logogood" >
+            <!-- <a href="#home" onclick="smoothScroll(document.getElementById('ourhome'))">
+                <img class="udyam--logo" src="{% static 'Assets/udyamwhite2.png' %}" alt=""  >
+            </a> -->
+            <img class="udyam--logo" src="{% static 'Assets/u_logo_white_with_title_bgless (2).png' %}" alt=""  >
+        </div>
+        <div class="container windowview">     
+            <section class="section section--menu" id="Francisco" >
+                <nav class="menu menu--francisco" >
+                    <ul class="menu__list" id="toplist">
+                        <li class="menu__item menu__item--current"><a href="#home" class="menu__link" onclick="smoothScroll(document.getElementById('ourhome'))"><span class="menu__helper">Home</span></a></li>
+                        <li class="menu__item"><a href="#aboutudyam" class="menu__link"  onclick="smoothScroll(document.getElementById('aboutudyam'))"><span class="menu__helper" >About</span></a></li>
+                        <li class="menu__item"><a href="#events" class="menu__link" onclick="smoothScroll(document.getElementById('ourevents'))"><span class="menu__helper">Events</span></a></li>
+                        <li class="menu__item"><a href="#speakers" class="menu__link" onclick="smoothScroll(document.getElementById('ourspeakers'))"><span class="menu__helper">Speakers</span></a></li>
+                        <li class="menu__item"><a href="#leaderboard" class="menu__link" onclick="parent.location='https://www.udyamfest.com/leaderboard'"><span class="menu__helper">Leader Board</span></a></li>
+                        <li class="menu__item"><a href="#sponsors" class="menu__link" onclick="smoothScroll(document.getElementById('oursponsors'))"><span class="menu__helper">Sponsors</span></a></li>
+                        <li class="menu__item"><a class="menu__link" onclick="window.open('https://www.udyamfest.com/team')" style="color:#e6dede;"><span class="menu__helper">Team</span></a></li>
+                        
+                    </ul>
+                </nav>
+            </section>
+        </div>
+    </div>
+    <!-- MOBILE VIEW ------------------------------------------------------------------>
+    
+    <div class="container-mobile" style="width: 100%;">
+
+        <div class="device">
+            <div class="containermoba">
+                <button id="burger" class="open-main-nav" onclick="toggle_navbar()">
+                    <span class="burger"></span>
+                    <span class="burger-text"></span>
+                </button>
+                <nav class="main-nav" id="main-nav">
+                    <ul>
+                        <li class="clickme">
+                            <a href="#" style="text-decoration: none" onclick="smoothScroll(document.getElementById('ourhome'))">Home</a>
+                        </li>
+                        <li class="clickme">
+                            <a href="#aboutudyam" style="text-decoration: none" onclick="smoothScroll(document.getElementById('aboutudyam'))">About Us</a>
+                        </li>
+                        <li class="clickme">
+                            <a href="#events" style="text-decoration: none" onclick="smoothScroll(document.getElementById('ourevents'))">Events</a>
+                        </li>
+                        <li class="clickme">
+                            <a href="#speakers" style="text-decoration: none" onclick="smoothScroll(document.getElementById('ourspeakers'))">Speakers</a>
+                        </li>
+                        <li class="clickme">
+                            <a href="#ourschedule" style="text-decoration: none" onclick="smoothScroll(document.getElementById('ourschedule'))">Schedule</a>
+                        </li>
+                        <li class="clickme">
+                            <a href="#sponsors" style="text-decoration: none" onclick="smoothScroll(document.getElementById('oursponsors'))">Sponsors</a>
+                        </li>
+                        <li class="clickme">
+                            <a href="{% url 'leaderboard' %}" style="text-decoration: none">Leader Board</a>
+                        </li>
+                        <li class="clickme">
+                            <a href="{% url 'team' %}" style="text-decoration: none">Team</a>
+                        </li>
+                        {% if user.is_authenticated %}
+                            <li class="clickme">
+                                <a href="{% url 'dashboard' %}" style="text-decoration: none">Dashboard</a>
+                            </li>
+                        {% else %}
+                            <li class="clickme">
+                                <a href="{% url 'login' %}" style="text-decoration: none">Sign In</a>
+                            </li>
+                        {% endif %}
+                    </ul>
+                </nav>
+            </div>
+        </div>   
+                    
+    </div>
+    <script src="{% static 'Javascript/mobile.js' %}"></script>
+                  <!-- / MOBILE VIEW ---------------------------------------------------------------->
+    <!-- /container -->
+    <script src="{% static 'Javascript/classie.js' %}"></script>
+    <script src="{% static 'Javascript/clipboard.min.js' %}"></script>
+    <script>
+    (function() {
+        [].slice.call(document.querySelectorAll('.menu')).forEach(function(menu) {
+            var menuItems = menu.querySelectorAll('.menu__link'),
+                setCurrent = function(ev) {
+                    ev.preventDefault();
+
+                    var item = ev.target.parentNode; // li
+
+                    // return if already current
+                    if (classie.has(item, 'menu__item--current')) {
+                        return false;
+                    }
+                    // remove current
+                    classie.remove(menu.querySelector('.menu__item--current'), 'menu__item--current');
+                    // set current
+                    classie.add(item, 'menu__item--current');
+                };
+
+            [].slice.call(menuItems).forEach(function(el) {
+                el.addEventListener('click', setCurrent);
+            });
+        });
+
+        [].slice.call(document.querySelectorAll('.link-copy')).forEach(function(link) {
+            link.setAttribute('data-clipboard-text', location.protocol + '//' + location.host + location.pathname + '#' + link.parentNode.id);
+            new Clipboard(link);
+            link.addEventListener('click', function() {
+                classie.add(link, 'link-copy--animate');
+                setTimeout(function() {
+                    classie.remove(link, 'link-copy--animate');
+                }, 300);
+            });
+        });
+    })(window);
+    </script>
+
+
+    <!-- videopart------------------------------------------------------------------ -->
+    <div id="ourhome">
+        <video loop autobuffer muted playsinline id="myvideo" ontouchstart="this.play()"> 
+            <!-- <source src="Assets/mobile.mp4" >  -->   
+        </video>    
+    </div>
+
+    <script type="text/javascript">
+        var ONLYONETIME_EXECUTE = null;
+        window.addEventListener('load', function(){ // on page load
+         
+              document.body.addEventListener('touchstart', function(e){
+            
+            if (ONLYONETIME_EXECUTE == null) {   
+
+                video.play();
+
+                ONLYONETIME_EXECUTE = 0;
+            }
+
+          }, false)
+         
+        }, false)
+    </script>
+
+    <script type="text/javascript">
+        var video = document.getElementById('myvideo');
+        var source = document.createElement('source');
+
+        video.appendChild(source);
+        video.play();
+
+        function change_video() {
+            var w = parseInt(window.innerWidth);
+
+            if(w <= 500) {
+                source.setAttribute('src', '{% static "/Assets/mobile.webm" %}'); 
+                video.load();
+                var playPromise = video.play();
+                if (playPromise !== undefined) {
+                    playPromise.then(_ => {
+                        video.play();
+                    })
+                    .catch(error => {
+                        console.log(error)
+                    });
+                }
+            }else {
+                source.setAttribute('src', '{% static "/Assets/laptop.mp4" %}'); 
+                video.load();
+                var playPromise = video.play();
+                if (playPromise !== undefined) {
+                    playPromise.then(_ => {
+                        video.play();
+                    })
+                    .catch(error => {
+                        console.log(error)
+                    });
+                }
+            }
+
+        }
+
+        $(window).resize(function(e) {
+            change_video();
+        });
+        $(document).ready(function(e) {
+            change_video();
+        });
+    </script>
+
+    <!-- about us -->
+
+    <div class="px-2 pt-3 row section-2" data-emit-events="" id="aboutudyam">
+        <div class="col text-center justify-content-center align-items-center d-flex flex-column">
+            <div class="heading-containter">
+                <p class="headingp"><a class="headinga">ABOUT US</a></p>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4 justify-content-center align-items-center d-flex flex-column tv-box faster">
+                    
+                    <div class="mt-3 mainimg" data-toggle="modal" data-target=".video-modal-lg">
+                        <img src="{% static 'Assets/abstract.jpg' %}" class="yt-image" style="cursor: pointer; border-radius: 3%;" width="100%" alt="s">
+                        <!-- <a href="https://www.youtube.com/watch?v=I90caurLxeU&t" target="_blank"><img src="{% static 'Assets/play-button.png' %}" class="play-btn"></a> --> 
+                        <!-- <img src="{% static 'Assets/play-button.png' %}" class="play-btn" data-toggle="modal"
+                            data-target="#exampleModal"> -->
+                    </div>
+                </div>
+                <div
+                    class="col-12 col-md-7 light stretch text-white text-left aboutText justify-content-center align-items-center d-flex flex-column">
+                    <p class="mb-3  aboutText1 faster">UDYAM  is the Annual Technical Festival of the Department of Electronics Engineering, IIT (BHU) Varanasi. UDYAM offers an opportunity for students to treat themselves to a technical extravaganza. It gives you a chance to be more actively involved in the learning experience at the heart of effective technology integration. It is a means for students to showcase their practical talent in their learning and not just limit themselves to theoretical knowledge. With this idea of an application-oriented approach, UDYAM started in 2010 with a vision of providing a platform for the community of Indian students to develop and showcase their technical prowess. It is not just these head to head competitions that you can get at Udyam. It's about the events that make you proficient with the industry standards. The limelight is on you.</p>
+                    <p class="mb-3 d-none d-md-block aboutText2 fast">For the last 11 years, UDYAM has grown exponentially, crossing all boundaries. This year marks the 12'th Edition of UDYAM, IIT (BHU) Varanasi. Concentrating on a vast number of exciting and engaging events, this edition of UDYAM  promises to be elevated, unpredicted, and more prominent than ever before.</p>
+                    <p class="mb-3 aboutText3">Welcome to UDYAM'21.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <video width="100%" controls autoplay="true">
+                        <source src="https://www.youtube.com/watch?v=I90caurLxeU" type="video/mp4">
+                    </video>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--countdown-->
+<!--     <div class="bg-img1 size1 overlay1">
+        <div class="cd100"></div>
+    </div>
+    <script src="{% static 'vendor/jquery/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'vendor/countdowntime/flipclock.min.js' %}"></script>
+    <script src="{% static 'vendor/countdowntime/countdowntime.js' %}"></script>
+    <script>
+        $('.cd100').countdown100({
+            endtimeYear: 2021,
+            endtimeMonth: 4,
+            endtimeDate: 16,
+            endtimeHours: 0,
+            endtimeMinutes: 0,
+            endtimeSeconds: 0,
+        });
+    </script>
+    <script src="{% static 'vendor/tilt/tilt.jquery.min.js' %}"></script>
+    <script src="{% static 'Javascript/countdown.js' %}"></script> -->
+
+
+    <!-- EVENTS -->
+
+    <div class="heading-containter" id="ourevents">
+        <p class="headingp" ><a class="headinga" >EVENTS</a></p>
+    </div>
+    <div class="container-fluid ">
+        <div class="row ">
+
+
+            <div class="col-md-6  compis-desc ">
+                <div class="row mar-manage1">
+                    <div class="col-md-5 padright"><img class="compis-logo" src="{% static 'Assets/mosaic.jpg' %}" alt="">
+                    </div>
+                    <div class="col-md-7  padleft">
+                        <div class="compis-content">
+                            <p class="compis-name">MOSAIC</p>
+                            <!-- <p class="compis-pm">Prize Money: <span>INR 1,00,000</span></p> -->
+                            <p class="compis-about ">An image processing and machine learning based event that challenges the participants to solve the canonical problems in computer vision and perception, through techniques derived from Deep learning and achieve the goal of vision intelligence.
+                            </p>
+                            <a class="btn btn-outline-primary" href="https://drive.google.com/file/d/1UQcwv7-Hj4ZUDvoPtA3-j4bwOyCyVIcg/view?usp=sharing" target="_blank">PS 1</a>
+                            <a class="btn btn-outline-primary" href="https://drive.google.com/file/d/1xX0MuyIkMsikJGwQp8gsk18gea0Gq9Lb/view?usp=sharing" target="_blank">PS 2</a>
+                            <a class="btn btn-outline-success" href="{% url 'dashboard' %}">Register</a>
+                            <a class="btn btn-outline-warning" data-toggle="modal" data-target="#mosiac" style="color: #ffc107;">Schedule</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="mosiac" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header text-center" style="margin: auto;">
+                        <h4 class="text-center modal-title" id="myModalLabel">Mosaic</h4>
+                    </div>
+                    <div class="modal-body">
+                      <ul class="text-center bio">
+                        PS1 Launch - 5 April 12:00</br>
+                        PS1 Deadline -12 April 23:59</br>
+                        PS2 Launch -7 April 17:00</br>
+                        PS2 Deadline - 16 April 23:59
+                      </ul>
+                    </div>
+                    <div class="modal-footer">        
+                      <button type="button" class="btn btn-danger btn-outline" data-dismiss="modal">&times;</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+            <div class="col-md-6  compis-desc">
+                <div class="row mar-manage2">
+                    <div class="col-md-5  padright"><img class="compis-logo" src="{% static 'Assets/spybits.jpg' %}" alt="">
+                    </div>
+                    <div class="col-md-7  padleft">
+                        <div class="compis-content">
+                            <p class="compis-name">SPYBITS</p>
+                            <!-- <p class="compis-pm">Prize Money: <span>INR 1,75,000</span></p> -->
+                            <p class="compis-about ">Spybits is an event based on the technological advancements in Cybersecurity, Cryptography, and Cryptanalysis demonstrated through various innovative puzzles, challenging both beginners and master-class hackers' imagination.</p>
+                            <a class="btn btn-outline-primary" href="https://drive.google.com/file/d/1p0NX5tUPvhxxnufrmQLx25MVo4Ag7hXL/view?usp=sharing" target="_blank">Event Structure</a>
+                            <a class="btn btn-outline-success" href="{% url 'dashboard' %}">Register</a>
+                            <a class="btn btn-outline-warning" data-toggle="modal" data-target="#spybits" style="color: #ffc107;">Schedule</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="modal fade" id="spybits" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header text-center" style="margin: auto;">
+                        <h4 class="text-center modal-title" id="myModalLabel">Spybits</h4>
+                    </div>
+                    <div class="modal-body">
+                      <ul class="text-center bio">
+                        Event Structure Launch - Apr 5 20:00</br>
+                        CP Round - April 15th 21:00 to 23:30 <a href="https://discuss.codechef.com/t/invitation-to-spybits-udyam21-iit-bhu-varanasi-rated-for-div-2-div-3/88011" target="_blank">More Details</a></br>
+                        CTF Round - Apr 16 14:00 to Apr 17 02:00
+                      </ul>
+                    </div>
+                    <div class="modal-footer">        
+                      <button type="button" class="btn btn-danger btn-outline" data-dismiss="modal">&times;</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            <!-- 2nd -->
+
+
+            <div class="col-md-6  compis-desc ">
+                <div class="row mar-manage1">
+                    <div class="col-md-5 padright"><img class="compis-logo" src="{% static 'Assets/ichip.jpg' %}" alt="">
+                    </div>
+                    <div class="col-md-7  padleft">
+                        <div class="compis-content">
+                            <p class="compis-name">I-CHIP</p>
+                            <!-- <p class="compis-pm">Prize Money: <span>INR 1,00,000</span></p> -->
+                            <p class="compis-about ">I-Chip is a Verilog-based event where participants learn to design, simulate, validate, and debug digital
+                            systems ranging from simple flip-flops to complex microprocessors using Hardware Description Language.
+                            The event allows learning Verilog HDL and working with FPGA Boards. The participants are taught the
+                            Vivado simulator's usage for behavioral and timing simulations of these systems, a crucial asset for any
+                            Hardware Design & Verification Engineer.</p>
+                            <a class="btn btn-outline-primary" href="https://drive.google.com/file/d/14viwuw1-lEaUjE2VI1qPmhzmL1Xh6Y5m/view?usp=sharing" target="_blank">PS 1</a>
+                            <a class="btn btn-outline-primary" href="https://drive.google.com/file/d/1AxcjO4RMeAbdGobcC3zJqc-5svqgLFcL/view?usp=sharing" target="_blank">PS 2</a>
+                            <a class="btn btn-outline-success" href="{% url 'dashboard' %}">Register</a>
+                            <a class="btn btn-outline-warning" data-toggle="modal" data-target="#ichip" style="color: #ffc107;">Schedule</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="ichip" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header text-center" style="margin: auto;">
+                        <h4 class="text-center modal-title" id="myModalLabel">I-Chip</h4>
+                    </div>
+                    <div class="modal-body">
+                      <ul class="text-center bio">
+                        PS1 Launch - Apr 5 20:30</br>
+                        PS1 Deadline - Apr 8 23:59</br>
+                        PS2 Launch - Apr 10 10:00</br>
+                        PS2 Deadline - Apr 17 23:59
+                      </ul>
+                    </div>
+                    <div class="modal-footer">        
+                      <button type="button" class="btn btn-danger btn-outline" data-dismiss="modal">&times;</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            <div class="col-md-6  compis-desc">
+                <div class="row mar-manage2">
+                    <div class="col-md-5  padright"><img class="compis-logo" src="{% static 'Assets/comm.jpg' %}" alt="">
+                    </div>
+                    <div class="col-md-7  padleft">
+                        <div class="compis-content">
+                            <p class="compis-name">COMMNET</p>
+                            <!-- <p class="compis-pm">Prize Money: <span>INR 1,75,000</span></p> -->
+                            <p class="compis-about ">Commnet is a Digital Communication based event focusing on the various techniques and
+                            methodologies used in Digital Communication Systems such as Coding Theory, Compression
+                            Algos, Signal Processing, Modulation & Demodulation techniques, etc. Participants get to learn
+                            these techniques and implement them using MATLAB.</p>
+                            <a class="btn btn-outline-primary" href="https://drive.google.com/file/d/1_hH05n-FuEkt3bq0sclKp7IYSQe46Ixi/view?usp=sharing" target="_blank">PS 1</a>
+                            <a class="btn btn-outline-primary" href="https://drive.google.com/file/d/1hC511-P6lU3UhNBJqY5eat5GNhxFsbbP/view?usp=sharing" target="_blank">PS 2</a>
+                            <a class="btn btn-outline-success" href="{% url 'dashboard' %}">Register</a>
+                            <a class="btn btn-outline-warning" data-toggle="modal" data-target="#comment" style="color: #ffc107;">Schedule</a>
+                            <a class="btn btn-outline-danger" href="https://drive.google.com/drive/folders/1Au1m_dbGCJrGnsbiwZvC_meBi-wKKV8p" target="_blank">Resources</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="comment" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header text-center" style="margin: auto;">
+                        <h4 class="text-center modal-title" id="myModalLabel">Commnet</h4>
+                    </div>
+                    <div class="modal-body">
+                      <ul class="text-center bio">
+                        PS1 Launch - Apr 5 19:30</br>
+                        PS1 Deadline - Apr 11 23:59</br>
+                        PS2 Launch - Apr 12 1:00</br>
+                        PS2 Deadline - Apr 17 23:59
+                      </ul>
+                    </div>
+                    <div class="modal-footer">        
+                      <button type="button" class="btn btn-danger btn-outline" data-dismiss="modal">&times;</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            <!-- 3rd -->
+
+
+            <div class="col-md-6  compis-desc ">
+                <div class="row mar-manage1">
+                    <div class="col-md-5 padright"><img class="compis-logo" src="{% static 'Assets/continum.jpg' %}" alt="">
+                    </div>
+                    <div class="col-md-7  padleft">
+                        <div class="compis-content">
+                            <p class="compis-name">CONTINUUM</p>
+                            <!-- <p class="compis-pm">Prize Money: <span>INR 1,00,000</span></p> -->
+                            <p class="compis-about ">Continuum is an Analog Electronics based event where the participants learn to design and
+                            simulate analog circuits & filters to perform computations to solve the given problem statement.
+                            Participants learn to use CAD tools for designing and simulating circuits and also get an
+                            opportunity to implement and validate their
+                            designs on hardware.</p>
+                            <a class="btn btn-outline-primary" href="https://drive.google.com/file/d/1IwSEKubnQewKBVOILIUVP0R2HMyuoEef/view?usp=sharing" target="_blank">PS 1</a>
+                            <a class="btn btn-outline-primary" href="https://drive.google.com/file/d/1OZxM4a2_7V5jsQ3CNZgdcY5Nr1tg9XEu/view?usp=sharing" target="_blank">PS 2</a>
+                            <a class="btn btn-outline-success" href="{% url 'dashboard' %}">Register</a>
+                            <a class="btn btn-outline-warning" data-toggle="modal" data-target="#continuum" style="color: #ffc107;">Schedule</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="continuum" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header text-center" style="margin: auto;">
+                        <h4 class="text-center modal-title" id="myModalLabel">Continuum</h4>
+                    </div>
+                    <div class="modal-body">
+                      <ul class="text-center bio">
+                        PS1 Launch - Apr 5 17:00 <a href="https://bit.ly/363PlNP">(Watch here)</a></br>
+                        PS1 Submission Deadline - Apr 11 23:59</br>
+                        PS2 Launch - Apr 12 00:30</br>
+                        Continuum Quiz - Apr 12 17:00 to 19:00</br>
+                        PS2 Deadline - Apr 16 23:59
+                      </ul>
+                    </div>
+                    <div class="modal-footer">        
+                      <button type="button" class="btn btn-danger btn-outline" data-dismiss="modal">&times;</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            <div class="col-md-6  compis-desc">
+                <div class="row mar-manage2">
+                    <div class="col-md-5  padright"><img class="compis-logo" src="{% static 'Assets/digisim.jpg' %}" alt="">
+                    </div>
+                    <div class="col-md-7  padleft">
+                        <div class="compis-content">
+                            <p class="compis-name">DIGISIM</p>
+                            <!-- <p class="compis-pm">Prize Money: <span>INR 1,75,000</span></p> -->
+                            <p class="compis-about ">Digisim is a Digital Electronics based event where participants must design optimized digital
+                            systems and simulate them on Proteus. The problem statements include exhilarating real-world
+                            applications ranging from implementing classical Algorithms to interactive Game controllers
+                            using the fundamental building blocks of digital electronics.</p>
+                            <a class="btn btn-outline-primary" href="https://drive.google.com/file/d/1o3FiEGS3KcIpx0ugYR3em1dGg9fMv1HS/view?usp=sharing" target="_blank">PS 1</a>
+                            <a class="btn btn-outline-primary" href="https://drive.google.com/file/d/1ybbEhVuIEwDG6yQRwprHIVJZ95sKybbj/view?usp=sharing" target="_blank">PS 2</a>
+                            <a class="btn btn-outline-success" href="{% url 'dashboard' %}">Register</a>
+                            <a class="btn btn-outline-warning" data-toggle="modal" data-target="#digisim" style="color: #ffc107;">Schedule</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="digisim" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header text-center" style="margin: auto;">
+                        <h4 class="text-center modal-title" id="myModalLabel">Digisim</h4>
+                    </div>
+                    <div class="modal-body">
+                      <ul class="text-center bio">
+                        PS1 Launch - 5 April 18:30</br>
+                        PS1 Deadline - 11 April 23:59 
+                        PS2 Deadline - Apr 17 12:00 
+                      </ul>
+                    </div>
+                    <div class="modal-footer">        
+                      <button type="button" class="btn btn-danger btn-outline" data-dismiss="modal">&times;</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            <!-- 4TH -->
+
+            <div class="col-md-6  compis-desc ">
+                <div class="row mar-manage1">
+                    <div class="col-md-5 padright"><img class="compis-logo" src="{% static 'Assets/xiota.jpg' %}" alt="">
+                    </div>
+                    <div class="col-md-7  padleft">
+                        <div class="compis-content">
+                            <p class="compis-name">XIOTA</p>
+                            <!-- <p class="compis-pm">Prize Money: <span>INR 1,00,000</span></p> -->
+                            <p class="compis-about ">
+                                X-IoT-A is an event based on applying practical knowledge of the recent technology in the
+                            Internet of Things(IoT). In this event, the participants are required to implement a working
+                            solution to a major real-world problem.
+                            </p>
+                            <a class="btn btn-outline-primary" href="https://drive.google.com/file/d/1FLCq5cSTmfQWXWTOnu6Lcxcf3Vzw2v7P/view?usp=sharing" target="_blank">PS 1</a>
+                            <a class="btn btn-outline-primary" href="https://drive.google.com/file/d/12Oxjw5DtbvNLFXNyewfMafAaa4pqQlgl/view?usp=sharing" target="_blank">PS 2</a>
+                            <a class="btn btn-outline-success" href="{% url 'dashboard' %}">Register</a>
+                            <a class="btn btn-outline-warning" data-toggle="modal" data-target="#xiot" style="color: #ffc107;">Schedule</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="xiot" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header text-center" style="margin: auto;">
+                        <h4 class="text-center modal-title" id="myModalLabel">X-IoT-A</h4>
+                    </div>
+                    <div class="modal-body">
+                      <ul class="text-center bio">
+                        PS1 Launch - Mar 23 17:00</br>
+                        PS1 Deadline - Apr 7 23:59</br>
+                        PS2 Launch - Apr 9 17:00</br>
+                        PS2 Deadline - Apr 17 23:59
+                      </ul>
+                    </div>
+                    <div class="modal-footer">        
+                      <button type="button" class="btn btn-danger btn-outline" data-dismiss="modal">&times;</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            <div class="col-md-6  compis-desc">
+                <div class="row mar-manage2">
+                    <div class="col-md-5  padright"><img class="compis-logo" src="{% static 'Assets/cassandra.jpg' %}" alt="">
+                    </div>
+                    <div class="col-md-7  padleft">
+                        <div class="compis-content">
+                            <p class="compis-name">CASSANDRA</p>
+                            <p class="compis-about ">Cassandra was the Greek goddess with the power to predict
+                            future events. With the analogy, team Udyam presents you with
+                            the first version of Cassandra- a data science event where data
+                            analysts need to design a model that learns and optimizes on
+                            the dataset provided.</p>
+                            <a class="btn btn-outline-primary" href="https://drive.google.com/file/d/19Rw9KZah1zHO6AxHYM1ewLV20kQJA8o1/view?usp=sharing" target="_blank">Event Structure</a>
+                            <a class="btn btn-outline-success" href="{% url 'dashboard' %}">Register</a>
+                            <a class="btn btn-outline-warning" data-toggle="modal" data-target="#cassandra" style="color: #ffc107;">Schedule</a>
+                            <a class="btn btn-outline-danger" href="https://www.kaggle.com/t/2d38c98d94804dc3bceccde7277f6ef1" target="_blank">Contest</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="cassandra" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header text-center" style="margin: auto;">
+                        <h4 class="text-center modal-title" id="myModalLabel">Cassandra</h4>
+                    </div>
+                    <div class="modal-body">
+                      <ul class="text-center bio">
+                        Event Structure Launch - Apr 5 19:00</br>
+                        Hackathon Round - Apr 9 18:00 to Apr 12 18:00</br>
+                        Presentation Round - Apr 18 14:00
+                      </ul>
+                    </div>
+                    <div class="modal-footer">        
+                      <button type="button" class="btn btn-danger btn-outline" data-dismiss="modal">&times;</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!-- 5TH -->
+
+            <div class="col-md-6  compis-desc">
+                <div class="row mar-manage1">
+                    <div class="col-md-5 padright"><img class="compis-logo" src="{% static 'Assets/funkit.jpg' %}" alt="">
+                    </div>
+                    <div class="col-md-7  padleft">
+                        <div class="compis-content">
+                            <p class="compis-name">FUNCKIT</p>
+                            <!-- <p class="compis-pm">Prize Money: <span>INR 1,00,000</span></p> -->
+                            <p class="compis-about ">Funckit is another brain wracking event that Udyam brings about which tests a participant’s
+                            problem-solving abilities through low-level programming and building gate-level circuitry. Hack
+                            your circuits and manipulate the logic to optimize your hardware and decrease the execution
+                            time.
+                            </p>
+                            <a class="btn btn-outline-primary" href="https://drive.google.com/file/d/1bUYOVYZZNTqSSZTvLiv00Pzxc-sPgYHn/view?usp=sharing" target="_blank">PS</a>
+                            <a class="btn btn-outline-success" href="{% url 'dashboard' %}">Register</a>
+                            <a class="btn btn-outline-warning" data-toggle="modal" data-target="#funckit" style="color: #ffc107;">Schedule</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="funckit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header text-center" style="margin: auto;">
+                        <h4 class="text-center modal-title" id="myModalLabel">Funckit</h4>
+                    </div>
+                    <div class="modal-body">
+                      <ul class="text-center bio">
+                        PS 1 and 2 Launch - Apr 5 18:30</br>
+                        PS 1 Deadline - Apr 11 23:59</br>
+                        PS 2 Deadline - Apr 17 12:00
+                      </ul>
+                    </div>
+                    <div class="modal-footer">        
+                      <button type="button" class="btn btn-danger btn-outline" data-dismiss="modal">&times;</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+        </div>
+    </div>
+
+
+    <!-- speaker -->
+    <div class="heading-containter" id="ourspeakers">
+        <p class="headingp"><a class="headinga">SPEAKERS</a></p>
+    </div>
+    <div class="speakers col-24">
+        <div class="col-md-3 col-12">
+
+            <div class="card">
+                <div class="card-liner">
+                    <figure><img src="{% static 'Assets/pankajdwivedi1.jpg' %}" alt="" /> </figure>
+                    <div class="card--social">
+                        <ul>
+                            <li class="twitter"><a href="https://www.facebook.com/pankaj.dwivedi.1806"><i class="fa fa-facebook"></i></a></li>
+                            <li class="linkedin"><a href="#0"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="card--title">
+                        <h3>Pankaj Dwivedi</h3>
+                        <p>Previous Speaker</p>
+                    </div>
+                    <div class="card--desc">
+                        <hr />
+                        <p>
+                            Engineering manager at Mentor Graphics.
+                        </p>
+                    </div>
+                    <div class="card--btn">
+                        <a href="#0">
+                            <span class="moreinfo"><i class="fa fa-info-circle"></i> More Info</span>
+                            <span class="fullprof">More Info</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-3 col-12">
+
+            <div class="card">
+                <div class="card-liner">
+                    <figure><img src="{% static '/Assets/s2.jpeg' %}" alt="" /> </figure>
+                    <div class="card--social">
+                        <ul>
+                            <li class="twitter"><a href="#0"><i class="fa fa-twitter"></i></a></li>
+                            <li class="linkedin"><a href="https://www.linkedin.com/in/aman-kumar-a1a63294/"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="card--title">
+                        <h3>Aman Kumar</h3>
+                        <p>Previous Speaker</p>
+                    </div>
+                    <div class="card--desc">
+                        <hr />
+                        <p>
+                            Co-Founder and Director of Teeshood | TedEx Speaker.
+                        </p>
+                    </div>
+                    <div class="card--btn">
+                        <a>
+                            <span class="moreinfo"><i class="fa fa-info-circle"></i> More Info</span>
+                            <span class="fullprof">More Info</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-3 col-12">
+
+            <div class="card">
+                <div class="card-liner">
+                    <figure><img src="{% static '/Assets/s3.jpeg' %}" alt="" /> </figure>
+                    <div class="card--social">
+                        <ul>
+                            <li class="twitter"><a href=""><i class="fa fa-twitter"></i></a></li>
+                            <li class="linkedin"><a href="https://www.linkedin.com/in/girishkg/?originalSubdomain=in"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="card--title">
+                        <h3>Girish Gupta</h3>
+                        <p>Previous Speaker</p>
+                    </div>
+                    <div class="card--desc">
+                        <hr />
+                        <p>Senior Engineering Manager at CISCO.
+                        </p>
+                    </div>
+                    <div class="card--btn">
+                        <a href="#0">
+                            <span class="moreinfo"><i class="fa fa-info-circle"></i> More Info</span>
+                            <span class="fullprof">More Info</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <!-- schedule -->
+    <div class="heading-containter" id="ourschedule">
+        <p class="headingp"><a class="headinga">SCHEDULE</a></p>
+    </div>
+    <div class="containertp">
+        <div class="rowtp">
+            <div class="col-md-12">
+                <div class="main-timeline3">
+                    <div class="timeline">
+                        <a href="https://www.youtube.com/watch?v=dvT_02sQCzQ" target="_blank" class="timeline-content">
+                            <span class="year">9<sup>th</sup> Nov 2020</span>
+
+                            <p class="description">
+                                UDYAM'21 Orientation. Now on YouTube, click here to watch. 
+                            </p>
+                        </a>
+                    </div>
+                    <div class="timeline">
+                        <a class="timeline-content">
+                            <span class="year">1<sup>st</sup> Dec 2020</span>
+
+                            <p class="description">
+                                Phase 1 of our workshops. Join us as we start from the basics of each event. Uploaded to YouTube every Monday, Wednesday and Friday.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="timeline">
+                        <a class="timeline-content">
+                            <span class="year">3<sup>rd</sup> Jan 2021</span>
+
+                            <p class="description">
+                                Phase 2 of our workshops. The continuation of the workshop series, covering all the important theories, technologies and tricks. Uploaded to YouTube every Saturday and Sunday.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="timeline">
+                        <a class="timeline-content">
+                            <span class="year">27<sup>th</sup> Feb 2021</span>
+
+                            <p class="description">
+                                Phase 3 of our Workshops. Discussing the all important problem statements and winding up on all the learning. Uploaded to YouTube every Saturday and Sunday.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="timeline">
+                        <a class="timeline-content">
+                            <span class="year">16<sup>th</sup>-18<sup>th</sup> Apr 2021</span>
+
+                            <p class="description">
+                                Buckle up for UDYAM'21!! Eventwise schedule coming soon.
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contactus????????????????????????? -->
+
+
+    <div class="heading-containter" id="oursponsors">
+        <p class="headingp" ><a class="headinga">SPONSORS</a></p>
+    </div>
+
+    <div class="container my-container id-section justify-content-around" >
+        <div class="row my-row id-row" style="justify-content: center;">
+            <div class="mt-3 col-6 col-md-3  my-col id2">
+                <div class="card profile-card-5">
+                    <div class="card-img-block">
+                        <img class="card-img-top" src="{% static '/Assets/20210414_205028_0000.png' %}" alt="Card image cap">
+                    </div>
+                    <div class="card-body pt-0">
+                        <h5 class="card-title text-center" style="color: wheat;">COINSWITCH KUBER</h5>
+                        <p class="card-text text-center">TITLE SPONSOR</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="mt-3 col-6 col-md-3  my-col id2">
+                <div class="card profile-card-5">
+                    <div class="card-img-block">
+                        <img class="card-img-top" src="{% static '/Assets/codechef.png' %}" alt="Card image cap">
+                    </div>
+                    <div class="card-body pt-0">
+                        <h5 class="card-title text-center" style="color: wheat;">CODECHEF</h5>
+                        <p class="card-text text-center">PLATFORM PARTNER</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row my-row id-row" style="justify-content: center;">
+            <div class="mt-3 col-6 col-md-3  my-col id2">
+                <div class="card profile-card-5">
+                    <div class="card-img-block">
+                        <img class="card-img-top" src="{% static '/Assets/thingq.png' %}" alt="Card image cap">
+                    </div>
+                    <div class="card-body pt-0">
+                        <h5 class="card-title text-center" style="color: wheat;">THINGQBATOR</h5>
+                        <p class="card-text text-center">EVENT SPONSOR</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="mt-3 col-6 col-md-3  my-col id2">
+                <div class="card profile-card-5">
+                    <div class="card-img-block">
+                        <img class="card-img-top" src="{% static '/Assets/silence.png' %}" alt="Card image cap">
+                    </div>
+                    <div class="card-body pt-0">
+                        <h5 class="card-title text-center" style="color: wheat;">SILENCE LABORATORIES</h5>
+                        <p class="card-text text-center">EVENT SPONSOR</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="mt-3 col-6 col-md-3  my-col id2">
+                <div class="card profile-card-5">
+                    <div class="card-img-block">
+                        <img class="card-img-top" src="{% static '/Assets/rapid.png' %}" alt="Card image cap">
+                    </div>
+                    <div class="card-body pt-0">
+                        <h5 class="card-title text-center" style="color: wheat;">RAPIDAI VISION</h5>
+                        <p class="card-text text-center">EVENT SPONSOR</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="mt-3 col-6 col-md-3 my-col id2">
+                <div class="card profile-card-5">
+                    <div class="card-img-block">
+                        <img class="card-img-top" src="{% static '/Assets/nasscom.png' %}" alt="Card image cap">
+                    </div>
+                    <div class="card-body pt-0">
+                        <h5 class="card-title text-center" style="color: wheat;">NASSCOM</h5>
+                        <p class="card-text text-center">EVENT SPONSOR</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row my-row id-row">
+            <div class="mt-3 col-6 col-md-3  my-col id2">
+                <div class="card profile-card-5">
+                    <div class="card-img-block">
+                        <img class="card-img-top" src="{% static '/Assets/C.jpeg' %}" alt="Card image cap">
+                    </div>
+                    <div class="card-body pt-0">
+                        <h5 class="card-title text-center" style="color: wheat;">CISCO</h5>
+                        <p class="card-text text-center">PREVIOUS SPONSOR</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="mt-3 col-6 col-md-3  my-col id2">
+                <div class="card profile-card-5">
+                    <div class="card-img-block">
+                        <img class="card-img-top" src="{% static '/Assets/MG.jpeg' %}" alt="Card image cap">
+                    </div>
+                    <div class="card-body pt-0">
+                        <h5 class="card-title text-center" style="color: wheat;">MENTOR GRAPHICS</h5>
+                        <p class="card-text text-center">PREVIOUS SPONSOR</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="mt-3 col-6 col-md-3  my-col id2">
+                <div class="card profile-card-5">
+                    <div class="card-img-block">
+                        <img class="card-img-top" src="{% static '/Assets/N.jpeg' %}" alt="Card image cap">
+                    </div>
+                    <div class="card-body pt-0">
+                        <h5 class="card-title text-center" style="color: wheat;">NVIDIA</h5>
+                        <p class="card-text text-center">PREVIOUS SPONSOR</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="mt-3 col-6 col-md-3 my-col id2">
+                <div class="card profile-card-5">
+                    <div class="card-img-block">
+                        <img class="card-img-top" src="{% static '/Assets/A.jpeg' %}" alt="Card image cap">
+                    </div>
+                    <div class="card-body pt-0">
+                        <h5 class="card-title text-center" style="color: wheat;">ARM Corporate</h5>
+                        <p class="card-text text-center">PREVIOUS SPONSOR</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="ourcontact">
+        <div class="container my-container contact-us-section" >
+            <div class="row my-row contact-us-row">
+                <div class="col-6 col-sm-6 col-md-3">
+                    <div class="imgs d-none d-md-block">
+                        <div class="card-img-block col-md-6" style="margin: auto;">
+                            <img class="card-img-top" src="{% static 'Assets/UDYAM_21.png' %}" alt="Card image cap">
+                        </div>
+                    </div>
+                    <div class="contactInfo col-md-6 d-none d-md-block">
+                        <div class="box">
+                            <div class="icon"><i class="fa1 fa fa-envelope-o" aria-hidden="true"></i></div>
+                            <div class="text">
+                                <h3 style="font-size: 1.5rem">For Queries</h3>
+                                <p>Mayank</p>
+                                <p style="padding-top: 0;">mchakravorty.ece18@iitbhu.ac.in</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contactInfo col-md-6 d-none d-md-block">
+                        <div class="box">
+                            <div class="icon"><i class="fa1 fa fa-address-book-o" aria-hidden="true"></i></div>
+                            <div class="text">
+                                <h3 style="font-size: 1.5rem">PR Team</h3>
+                                <p>Harshit Gupta</p>
+                                <p style="padding-top: 0;">harshitgupta.ece18@iitbhu.ac.in</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-3">
+                    <div class="imgs d-none d-md-block">
+                        <div class="card-img-block col-md-6" style="margin: auto;">
+                            <img class="card-img-top d-none d-md-block" src="{% static 'Assets/ees.png' %}" alt="Card image cap">
+                        </div>
+                    </div>
+                    <div class="contactInfo col-md-6 d-none d-md-block">
+                        <div class="box">
+                            <div class="icon"><i class="fa1 fa fa-balance-scale" aria-hidden="true"></i></div>
+                            <div class="text">
+                                <h3 style="font-size: 1.5rem">Marketing</h3>
+                                <p>Amritesh</p>
+                                <p style="padding-top: 0;">amritesh.ece18@iitbhu.ac.in</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contactInfo col-md-6 d-none d-md-block">
+                        <div class="box">
+                            <div class="icon"><i class="fa1 fa fa-user" aria-hidden="true"></i></a></div>
+                            <div class="text">
+                                <h3 style="font-size: 1.5rem">Co-Convenor</h3>
+                                <p>Ritweek Singh</p>
+                                <p style="padding-top: 0;">ritweeksingh.ece18@iitbhu.ac.in</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container col-md-6 my-col form">
+                    <div class="login-box">
+                        <h2 class="contact">CONTACT US</h2>
+                        <form action="{% url 'home' %}" method="POST" autocomplete="off">{% csrf_token %}
+                            <div class="user-box">
+                                {{ form.name }}
+                                {% if form.name.error %}
+                                    <p>{{ form.name.error }}</p>
+                                {% endif %}
+                                <label>Name</label>
+                            </div>
+                            <div class="user-box">
+                                {{ form.email }}
+                                {% if form.email.error %}
+                                    <p>{{ form.email.error }}</p>
+                                {% endif %}
+                                <label for="exampleInputEmail1">Email address</label>
+                            </div>
+                            <div class="user-box">
+                                {{ form.contact }}
+                                {% if form.contact.error %}
+                                    <p>{{ form.contact.error }}</p>
+                                {% endif %}
+                                <label for="exampleInputcontactno.">Contact-No.</label>
+                            </div>
+                            <div class="user-box">
+                                {{ form.query }}
+                                {% if form.query.error %}
+                                    <p>{{ form.query.error }}</p>
+                                {% endif %}
+                                <label for="exampleInputcontactno.">Query</label>
+                            </div>
+                            <a>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <button type="submit" style="border: none;background:transparent;color:white">Submit</button>
+                            </a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="nb-footer">
+            <!-- <div class="container">
+            <div class="row">
+            <div class="col-sm-12"> -->
+            <div class="about">
+                <img src="{% static '/Assets/logo.png' %}" class="img-responsive center-block" alt="">
+
+                <div class="social-media">
+                    <ul class="list-inline">
+                        <li><a href="https://www.facebook.com/udyamfest" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/udyam_iit_bhu/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UC8wlztNbDIu38rfQ1HChSIg" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/udyam/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+
+        </footer>
+    </div>
+
+    <script src="{% static '/Javascript/scrollingjs.js' %}"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+     <script> 
+        function toggle_navbar(){
+            var temp = document.querySelector(".container-mobile");
+            temp.classList.toggle("container-mobile-height")
+        }
+    </script>
+    <script type="text/javascript">
+        var preloader = document.getElementById('loader');
+
+        function loaderDisable() {
+            preloader.style.display = 'none';
+        }
+    </script>
+</body>
+</html>

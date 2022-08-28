@@ -1,0 +1,47 @@
+.midwale {
+  text-align: center;
+  font-weight: bold;
+}
+table {
+  border: 2px solid rgb(255, 255, 255);
+}
+.subheading {
+  /* position: absolute; */
+  margin: auto;
+  font-family: "Quicksand", sans-serif;
+  font-size: 2em;
+  color: #03e9f4;
+  text-align: center;
+}
+.tablecontent {
+  color: white;
+}
+
+.leaders {
+  margin: auto;
+  margin: 20px auto;
+  width: 80%;
+
+  /* border-radius: 10px;/ */
+}
+tr:hover {
+  background-color: #514c9c;
+}
+thead {
+  background-color: rgb(95, 3, 3);
+}
+tbody {
+  margin-bottom: 10px;
+}
+.firstpos {
+  background-color: #ea6153;
+}
+.secondpos {
+  background-color: #27ae60;
+}
+.thirdpos {
+  background-color: #2980b9;
+}
+.special {
+  background-color: #EE82EE;
+}
